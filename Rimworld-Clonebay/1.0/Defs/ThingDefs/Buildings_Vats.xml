@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Clonebay</defName>
+    <label>clonebay</label>
+    <description>An unbelievably complicated device capable of "resurrecting" a human being by accepting data from a neural scanner embedded in a person's brain. \n\nAt the time of death, the scanner transmits the deceased's genome and a full scan of the brain, down to the atom. The clonebay then flash-grows a baseline human from the genomic template; it then reintegrates or "burns" the neural scan into the blank brain of the clone. \n\nRequires a supply of raw biomass. One clone consumes 100 units of raw biomass, and the bay can hold up to 1000 units. Raw biomass can be produced at a refinery from edible protein or corpses.</description>
+    <thingClass>Clonebay.Building_PawnVatGrower</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Things/Building/ClonebayVat</texPath>
+      <drawSize>(6,6)</drawSize>
+      <drawRotated>false</drawRotated>
+      <shadowData>
+        <volume>(0.52, 0.53, 0.09)</volume>
+        <offset>(0,0,-0.43)</offset>
+      </shadowData>
+    </graphicData>
+    <drawerType>RealtimeOnly</drawerType>
+    <size>(3,3)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <designationCategory>Production</designationCategory>
+    <rotatable>true</rotatable>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+    <uiIconOffset>(0, 0.03)</uiIconOffset>
+    <uiIconScale>0.75</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <building>
+      <uninstallWork>1800</uninstallWork>
+    </building>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <costList>
+      <Steel>325</Steel>
+      <Silver>225</Silver>
+      <Plasteel>75</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+    </costList>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <researchPrerequisites>
+      <li>Clonebay_Clonebay</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Flammability>0.5</Flammability>
+      <Beauty>5</Beauty>
+      <Mass>145</Mass>
+      <Cleanliness>2.4</Cleanliness>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>700</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2.75</glowRadius>
+        <glowColor>(179,34,96,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>0</fuelConsumptionRate>
+        <fuelCapacity>1000.0</fuelCapacity>
+        <targetFuelLevelConfigurable>true</targetFuelLevelConfigurable>
+        <initialConfigurableTargetFuelLevel>100</initialConfigurableTargetFuelLevel>
+        <fuelFilter>
+          <thingDefs>
+            <li>Clonebay_RawBiomass</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+        <showFuelGizmo>true</showFuelGizmo>
+        <outOfFuelMessage>No raw biomass available - cloning will fail unless at least x100 is present!</outOfFuelMessage>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="Clonebay.VatGrowerProperties">
+        <bottomGraphic>
+          <graphicClass>Graphic_Single</graphicClass>
+          <texPath>Things/Building/ClonebayVatBottom</texPath>
+          <drawSize>(6,6)</drawSize>
+          <drawRotated>false</drawRotated>
+        </bottomGraphic>
+        <topGraphic>
+          <graphicClass>Graphic_Single</graphicClass>
+          <texPath>Things/Building/ClonebayVatTop</texPath>
+          <drawSize>(6,6)</drawSize>
+          <drawRotated>false</drawRotated>
+        </topGraphic>
+        <glowGraphic>
+          <graphicClass>Graphic_Single</graphicClass>
+          <texPath>Things/Building/ClonebayVatGlow</texPath>
+          <shaderType>MoteGlow</shaderType>
+          <drawSize>(6,6)</drawSize>
+          <drawRotated>false</drawRotated>
+        </glowGraphic>
+        <topDetailGraphic>
+          <graphicClass>Graphic_Single</graphicClass>
+          <texPath>Things/Building/ClonebayVatTopDetail</texPath>
+          <shaderType>MoteGlow</shaderType>
+          <drawSize>(6,6)</drawSize>
+          <drawRotated>false</drawRotated>
+        </topDetailGraphic>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

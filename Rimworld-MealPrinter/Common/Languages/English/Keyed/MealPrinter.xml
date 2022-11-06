@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Meal Descriptions-->
+	<SimpleMealDesc>A simple meal, printed from one main ingredient.\n\nEquivalent nutrient efficiency to manual cooking.</SimpleMealDesc>
+	<FineMealDesc>A complex dish, printed from one main ingredient.\n\nPoor nutrient efficiency that's only worsened by a printer's single-ingredient limitation, but very tasty.</FineMealDesc>
+	<PasteMealDesc>A printed mixture of protein, carbohydrates, vitamins, amino acids and minerals.\n\nUtterly disgusting, but nourishing and prints with unparalleled nutrient efficiency.</PasteMealDesc>
+	
+	<!--Meal print eff.-->
+	<SimpleMealEff>50</SimpleMealEff>
+	<FineMealEff>25</FineMealEff>
+	<PasteMealEff>85</PasteMealEff>
+
+	<!--Button text and descriptions-->
+	<ButtonBulkPrintBars>Bulk print NutriBars</ButtonBulkPrintBars>
+	<ButtonBulkPrintBarsDesc>Bulk print NutriBars, for emergency stockpiling, caravan supplies or other uses.</ButtonBulkPrintBarsDesc>
+	<ButtonBulkPrintBarsDescNoResearch>Bulk print NutriBars for emergency stockpiling, caravan supplies or other uses.\n\nDISABLED: Research Deep Protein Resequencing to unlock.</ButtonBulkPrintBarsDescNoResearch>
+	<ButtonBulkPrintBarsDescNoPower>printer is unpowered.</ButtonBulkPrintBarsDescNoPower>
+	<PrintSettingButton>Printing {0}s</PrintSettingButton>
+	
+	<!--Inspect Pane Text-->
+	<CurrentPrintSetting>\nCurrently set to print {0}s.</CurrentPrintSetting>
+	<CurrentEfficiency>\nNutrient efficiency per print: {0}%</CurrentEfficiency>
+	
+	<!--Bulk print bars text-->
+	<SetBarBatchSize>Print {0} NutriBars (Max allowed: {1})</SetBarBatchSize>
+	<CannotBulkPrintBars>Cannot bulk print NutriBars; printer has insufficient feedstock.</CannotBulkPrintBars>
+	<BarQuantity>Quantity</BarQuantity>
+	<PrintSettings>Options</PrintSettings>
+	<PrintForbidden>Mark printed bars as forbidden?</PrintForbidden>
+	<PrintRear>Print bars at rear?</PrintRear>
+	<ConfirmPrint>Print</ConfirmPrint>
+	
+	<!--Settings-->
+	<MealPrinterModName>Meal Printer</MealPrinterModName>
+	<PrintSFXLabel>Enable print sound effect?</PrintSFXLabel>
+	
+</LanguageData>

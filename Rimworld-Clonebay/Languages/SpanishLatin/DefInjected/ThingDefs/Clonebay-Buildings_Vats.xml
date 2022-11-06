@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Clonebay.label>bahía de clones</Clonebay.label>
+    <Clonebay.description>Un dispositivo increíblemente complicado capaz de "resucitar" a un humanoide recibiendo datos de un escáner neural incrustado en el cerebro de una persona. \En el momento de la muerte, el escáner transmite el genoma del fallecido y un escaneo completo del cerebro, hasta el átomo. La bahía de clones entonces hace crecer un cuerpo a partir de la plantilla genómica; luego reintegra o "graba" el escáner neural en el cerebro en blanco del clon. \Requiere un suministro de biomasa prima. Un clon consume 100 unidades de biomasa prima y la bahía puede albergar hasta 1000 unidades. La biomasa en bruto puede ser producida en una refinería a partir de proteínas comestibles o cadáveres.</Clonebay.description>
+
+</LanguageData>

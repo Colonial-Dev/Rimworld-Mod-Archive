@@ -1,0 +1,74 @@
+<LanguageData>
+    <Spaceports_ShuttleDisabled>No free landing pads</Spaceports_ShuttleDisabled>
+    <!--Shuttle Medevac-->
+    <Spaceports_ShuttleMedevacLetterLabel>Shuttle medevac</Spaceports_ShuttleMedevacLetterLabel>
+    <Spaceports_ShuttleMedevacLetter>Your short-range radio suddenly squawks to life, pumping a staticky but clearly distressed voice through the speakers. It seems you have been contacted by a shuttle pilot from {0} who was tasked with medevacing a badly injured ally.\n\nUnfortunately, the patient’s condition has rapidly worsened, and the onboard nurse fears that they may not reach the nearest {0} base with sufficient medical facilities in time. Your colony, however, is only a few minutes away.\n\nThe nurse and pilot both implore you to clear them for an emergency landing so you can provide proper treatment to the injured patient. Neither can make you a concrete promise of a material reward, but they swear that they’ll put in a good word with {1} and see if they can get a token of their gratitude sent your way.
+    </Spaceports_ShuttleMedevacLetter>
+    <Spaceports_ShuttleMedevacAccept>Clear them for landing - we'll do what we can.</Spaceports_ShuttleMedevacAccept>
+    <Spaceports_ShuttleMedevacPost>Postpone</Spaceports_ShuttleMedevacPost>
+    <Spacepots_ShuttleMedevacDeny>Apologize and send them away.</Spacepots_ShuttleMedevacDeny>
+    <Spaceports_ShuttleMedevacRewardLabel>Medevac reward</Spaceports_ShuttleMedevacRewardLabel>
+    <Spaceports_ShuttleMedevacReward>Some time ago, you assisted a distressed medevac shuttle. The onboard pilot and nurse kept their promise to put in a good word with their boss, and have even managed to get a drop pod reward sent your way.</Spaceports_ShuttleMedevacReward>
+
+    <!--Interstellar Derelict-->
+    <Spaceports_InterstellarDerelictLetterLabel>Interstellar derelict</Spaceports_InterstellarDerelictLetterLabel>
+    <Spaceports_InterstellarDerelictLetter>Your short-range radio has picked up an automated distress call from an interstellar ship. It seems that its Johnson-Tanaka drive was irreparably damaged somewhere out in the void between stars, leaving the vessel on a hyperbolic orbit that will sling it around the local sun and out of the system.\n\nHowever, as you watch its passage, a battered interplanetary shuttle decouples from its hull and fires up its Newtonian drive! Soon after, you receive a transmission from the passengers - they must have picked up your spaceport signal.\n\nThe pilot explains that their drive reactor is too unstable to perform a controlled descent, and begs you to clear them for an emergency landing. He offers some spacer tech as a reward.\n\nYou can accept their request, but be warned - the shuttle's damaged reactor could detonate during atmospheric entry, raining debris down on your colony. It might even detonate on impact, wreaking havoc on your spaceport.</Spaceports_InterstellarDerelictLetter>
+    <Spaceports_InterstellarDerelictAccept>Clear them for landing, but brace for the worst.</Spaceports_InterstellarDerelictAccept>
+    <Spaceports_InterstellarDerelictDeny>Apologize and mask your spaceport signal. It's too risky.</Spaceports_InterstellarDerelictDeny>
+    <Spaceports_InterstellarDerelictSafe>The shuttle's drive roars strong as it nears your spaceport. It's going to make it.</Spaceports_InterstellarDerelictSafe>
+    <Spaceports_InterstellarDerelictBoom>The shuttle's drive sputters dangerously as it nears your spaceport. It's going to crash!</Spaceports_InterstellarDerelictBoom>
+    <Spaceports_InterstellarDerelictShrapnel>The shuttle's reactor lost containment during atmospheric entry. Your spaceport beacon has picked up {0} inbound chunks of shrapnel and debris!</Spaceports_InterstellarDerelictShrapnel>
+
+    <!--Mystery Cargo-->
+    <Spaceports_MysteryCargo>Mysterious cargo</Spaceports_MysteryCargo>
+    <Spaceports_MysteryCargoLetter>Your spaceport beacon has just detected a shuttle approaching your spaceport on autonav. Its transponder has been disabled, and all attempts to contact crew that may be on board have failed.\n\nHowever, kinematic analysis of the shuttle’s trajectory and acceleration seems to suggest it holds a heavy cargo. It could be something valuable… or it could be a trap.\n\nYou could quash your beacon to hide from the autonav, or alternatively, you can keep it on and let the shuttle land.</Spaceports_MysteryCargoLetter>
+    <Spaceports_MysteryCargoAccept>Let the shuttle land.</Spaceports_MysteryCargoAccept>
+    <Spaceports_MysteryCargoDeny>It's too risky. Shut down the beacon.</Spaceports_MysteryCargoDeny>
+    <Spaceports_MysteryCargoContents>Contents: unknown</Spaceports_MysteryCargoContents>
+    <Spaceports_MysteryCargo0>It seems the shuttle contains a small assortment of useful things.</Spaceports_MysteryCargo0>
+    <Spaceports_MysteryCargo1>It seems the shuttle contains a large assortment of useful things.</Spaceports_MysteryCargo1>
+    <Spaceports_MysteryCargo2>It seems that the shuttle is empty. Its drives have been damaged, making it only good for scrap.</Spaceports_MysteryCargo2>
+    <Spaceports_MysteryCargo3>The shuttle's drive fires up as you approach, and it takes off for parts unknown.</Spaceports_MysteryCargo3>
+    <Spaceports_MysteryCargo4>The shuttle depressurizes violently when you approach, hurling several dessicated skeletons out of its airlock.</Spaceports_MysteryCargo4>
+    <Spaceports_MysteryCargo5>A piercing mental scream emits from the shuttle as you approach. A psychic charge!</Spaceports_MysteryCargo5>
+    <Spaceports_MysteryCargo6>The shuttle's airlock springs open when you approach, and a small attack party from {0} pours out!</Spaceports_MysteryCargo6>
+    <Spaceports_MysteryCargo7>The shuttle's reactor begins to wail louder and louder as you approach. It's a bomb!</Spaceports_MysteryCargo7>
+
+    <!--Prisoner Transfer-->
+    <Spaceports_PrisonerTransfer>Prisoner transfer</Spaceports_PrisonerTransfer>
+    <Spaceports_PrisonerTransferLetter>You’ve just received a proposition from {0} of {1}. It seems they have a surfeit of prisoners at some of their bases, and as such, they’re looking to offload a few - on commission, of course.\n\n{0} says that they still have two batches of prisoners to transfer - one low-security, the other high-security. If you accept, the payment and prisoners will be unconditionally and permanently transferred to you via shuttlecraft.\n\nLow-sec payment: {2}\nHigh-sec payment: {3}</Spaceports_PrisonerTransferLetter>
+    <Spaceports_PrisonerTransferLowSec>Take the low-security batch.</Spaceports_PrisonerTransferLowSec>
+    <Spaceports_PrisonerTransferHighSec>Take the high-security batch.</Spaceports_PrisonerTransferHighSec>
+    <Spaceports_PrisonerTransferDeny>Turn down the offer.</Spaceports_PrisonerTransferDeny>
+
+    <!--Spicy Pawn Lending-->
+    <Spaceports_SpicyPawnLending>{0} requests professional help</Spaceports_SpicyPawnLending>
+    <!--
+        0 - faction
+        1 - skill type
+        2 - pawn nick
+        3 - pawn pronoun
+        4 - job fluff text
+        5 - reward info
+    -->
+    <Spaceports_SpicyPawnLendingLetter>You've just received a proposition from {0}. It seems they need some professional help with a particularly complex and risky {1} job, and they think one of your colonists - {2} - is exactly who they've been looking for.\n\nIf you accept, {0} will send a shuttle to ferry {2} to the worksite, where {3} will {4} The job will take 10 to 15 days, after which {2} will be ferried back on a second shuttle alongside the promised reward.\n\nHowever, {0} warns that while they can say {2} isn't at risk of death, they can't guarantee {2}'s general safety and health while they're on the job.\n\nIf you choose to accept, {0} offers the following reward: {5}</Spaceports_SpicyPawnLendingLetter>
+    <Spaceports_SpicyPawnLendingAccept>Take the job.</Spaceports_SpicyPawnLendingAccept>
+    <Spaceports_SpicyPawnLendingDeny>Turn down the job - it's too risky.</Spaceports_SpicyPawnLendingDeny>
+    <Spaceports_PickupInbound>A shuttle is landing to pick up {0}.</Spaceports_PickupInbound>
+    <Spaceports_ShootingFluff>be tasked with hunting down herds of dangerous megafauna that have been terrorizing a small settlement.</Spaceports_ShootingFluff>
+    <Spaceports_MeleeFluff>teach new recipients of military bionics hand-to-hand combat skills.</Spaceports_MeleeFluff>
+    <Spaceports_ConstructionFluff>assist in the construction of a new low-orbit spingrav station.</Spaceports_ConstructionFluff>
+    <Spaceports_MiningFluff>help spin up a new low-orbit asteroid mining operation.</Spaceports_MiningFluff>
+    <Spaceports_CookingFluff>provide catering at an upcoming summit with an enemy faction, with whom tensions are especially high.</Spaceports_CookingFluff>
+    <Spaceports_PlantsFluff>harvest valuable byproducts from a field of particularly predatory megaflora.</Spaceports_PlantsFluff>
+    <Spaceports_AnimalsFluff>take part in a massive Thrumbo taming operation.</Spaceports_AnimalsFluff>
+    <Spaceports_CraftingFluff>help disassemble volatile ultratech antimatter technology.</Spaceports_CraftingFluff>
+    <Spaceports_ArtisticFluff>assist in the construction of a massive skyscraper monument.</Spaceports_ArtisticFluff>
+    <Spaceports_MedicalFluff>act as a combat medic on the outskirts of a mechanoid hive siege.</Spaceports_MedicalFluff>
+    <Spaceports_SocialFluff>act as an intermediary at an upcoming summit with an enemy faction, with whom tensions are especially high.</Spaceports_SocialFluff>
+    <Spaceports_IntellectualFluff>help defeat a rogue persona AI by jacking into its system with an ultratech brain-computer interface.</Spaceports_IntellectualFluff>
+    <Spaceports_SpicyPawnLendingReturnSafe>{0} has returned safely from their job.</Spaceports_SpicyPawnLendingReturnSafe>
+    <Spaceports_SpicyPawnLendingInjured>{0} was injured on the job! They're badly beat up, {1}.</Spaceports_SpicyPawnLendingInjured>
+    <Spaceports_SpicyPawnLendingNoAddlInjury>but other than that, they are fortunately intact.</Spaceports_SpicyPawnLendingNoAddlInjury>
+    <Spaceports_SpicyPawnLendingAddlInjury>and it seems they've also suffered the following: </Spaceports_SpicyPawnLendingAddlInjury>
+</LanguageData>

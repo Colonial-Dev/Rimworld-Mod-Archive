@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<ClonebayInstallScanner.label>instalar escáner neuronal</ClonebayInstallScanner.label>
+    <ClonebayInstallScanner.description>Instalar escáner neuronal.</ClonebayInstallScanner.description>
+
+	<Clonebay_MakeRawBiomass.label>hacer biomasa prima a partir de proteínas comestibles</Clonebay_MakeRawBiomass.label>
+    <Clonebay_MakeRawBiomass.description>Hacer un lote de biomasa cruda mediante la pulpa de proteína comestible.</Clonebay_MakeRawBiomass.description>
+
+</LanguageData>

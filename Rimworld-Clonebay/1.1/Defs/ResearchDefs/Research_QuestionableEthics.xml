@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Research Tabs -->
+  <ResearchTabDef>
+    <defName>Clonebay_ResearchTab</defName>
+    <label>Clonebay</label>
+  </ResearchTabDef>
+  <ResearchProjectDef>
+    <defName>Clonebay_Refine</defName>
+    <tab>Clonebay_ResearchTab</tab>
+    <label>raw biomass refinement</label>
+    <description>Understand how to convert edible protein into raw biomass in a refinery.</description>
+    <baseCost>2500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>BiofuelRefining</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Clonebay_ScannerImplanting</defName>
+    <tab>Clonebay_ResearchTab</tab>
+    <label>neural scanner implantation</label>
+    <description>Understand the necessary procedures to safely and successfully implant a human brain with a neural scanning mesh network.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Clonebay_Refine</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Clonebay_Clonebay</defName>
+    <tab>Clonebay_ResearchTab</tab>
+    <label>clonebay</label>
+    <description>Understand how to construct a clonebay that can recieve and act upon the signals broadcast by neural scanners.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Clonebay_ScannerImplanting</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>2</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Clonebay_Advanced</defName>
+    <tab>Clonebay_ResearchTab</tab>
+    <label>organic neural scanners</label>
+    <description>When complete, clonebays will automatically grow an organic neural scanner in all new clones.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Clonebay_Clonebay</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <researchViewX>3</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+</Defs>

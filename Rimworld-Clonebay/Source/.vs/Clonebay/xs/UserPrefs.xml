@@ -1,0 +1,35 @@
+<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Properties/AssemblyInfo.cs">
+    <Files>
+      <File FileName="Things/Building_PawnVatGrower.cs" Line="126" Column="15" />
+      <File FileName="Utilities/ThingFilterUtility.cs" Line="7" Column="1" />
+      <File FileName="HarmonyPatches.cs" Line="66" Column="22" />
+      <File FileName="Things/Building_GrowerBase.cs" Line="70" Column="19" />
+      <File FileName="DefOfs/QEThingDefOf.cs" Line="19" Column="1" />
+      <File FileName="Utilities/GenomeUtility.cs" Line="124" Column="140" />
+      <File FileName="Utilities/BrainManipUtility.cs" Line="152" Column="23" />
+      <File FileName="Properties/AssemblyInfo.cs" Line="13" Column="55" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Clonebay" expanded="True">
+            <Node name="Clonebay" expanded="True">
+              <Node name="Properties" expanded="True">
+                <Node name="AssemblyInfo.cs" selected="True" />
+              </Node>
+              <Node name="Things" expanded="True" />
+              <Node name="Utilities" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,10 @@
+/home/james/.local/share/Steam/steamapps/Program Files (x86)/Steam/steamapps/common/RimWorld/Mods/QuestionableEthics/Assemblies/Clonebay.dll
+/home/james/.local/share/Steam/steamapps/Program Files (x86)/Steam/steamapps/common/RimWorld/Mods/Clonebay/Assemblies/Clonebay.dll
+/home/james/.local/share/Steam/steamapps/common/RimWorld/Mods/Clonebay/Assemblies/Clonebay.dll
+/home/james/.local/share/Steam/steamapps/common/RimWorld/Mods/Clonebay/Source/obj/Debug/Clonebay.csproj.CoreCompileInputs.cache
+/home/james/.local/share/Steam/steamapps/common/RimWorld/Mods/Clonebay/Source/obj/Debug/Clonebay.dll
+/home/james/.local/share/Steam/steamapps/common/RimWorld/Mods/Clonebay/Source/obj/Debug/Clonebay.csprojAssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\Clonebay\Source\obj\Debug\Clonebay.csprojAssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\Clonebay\Source\obj\Debug\Clonebay.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\Clonebay\Source\obj\Debug\Clonebay.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Clonebay\1.1\Assemblies\Clonebay.dll

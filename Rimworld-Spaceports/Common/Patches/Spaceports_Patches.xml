@@ -1,0 +1,261 @@
+<Patch>
+
+    <!--Compat patch for Trader Ships-->
+    <!--Makes trader ships non-edifices so they can land on pads, and nukes their FillPercent to prevent an error-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Trader ships</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="TraderShipsShip"]/building</xpath> 
+            <value>
+                <isEdifice>false</isEdifice>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Trader ships</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="TraderShipsShip"]/fillPercent</xpath> 
+        </match>
+    </Operation>
+
+    <!--Compat patches for Royalty shuttles-->
+    <!--Makes them non-edifices so they can land on pads, and nukes their FillPercent to prevent an error-->
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Shuttle"]/building</xpath>
+        <value>
+            <isEdifice>false</isEdifice>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Shuttle"]/fillPercent</xpath>
+    </Operation>
+    
+    <!-- Rimefeller Pipes patch -->
+		<Operation Class="PatchOperationFindMod">
+			<mods>
+				<li>Rimefeller</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Spaceports_FuelProcessor"]/comps</xpath>
+						<value>
+						<li Class="Rimefeller.CompProperties_Pipe"/> 	
+						</value>
+				</li>
+				</operations>
+			</match>
+		</Operation>
+
+        <!-- DBH plumbing patch -->
+		<Operation Class="PatchOperationFindMod">
+			<mods>
+				<li>Dubs Bad Hygiene</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="Spaceports_FuelProcessor"]/comps</xpath>
+						<value>
+                            <li Class="DubsBadHygiene.CompProperties_Pipe">
+                                <mode>Sewage</mode>
+                            </li> 	
+						</value>
+				</li>
+				</operations>
+			</match>
+		</Operation>
+
+    <!--Compat self-patches for SOS2-->
+    <!--Arrival events-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/IncidentDef[defName="Spaceports_VisitorShuttleArrival"]/targetTags</xpath> 
+            <value>
+                <li>Map_SpaceHome</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/IncidentDef[defName="Spaceports_TraderShuttleArrival"]/targetTags</xpath> 
+            <value>
+                <li>Map_SpaceHome</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!--Special events-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/IncidentDef[defName="Spaceports_ShuttleMedevac"]/targetTags</xpath> 
+            <value>
+                <li>Map_SpaceHome</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/IncidentDef[defName="Spaceports_MedevacReward"]/targetTags</xpath> 
+            <value>
+                <li>Map_SpaceHome</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/IncidentDef[defName="Spaceports_InterstellarDerelict"]/targetTags</xpath> 
+            <value>
+                <li>Map_SpaceHome</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/IncidentDef[defName="Spaceports_MysteryCargo"]/targetTags</xpath> 
+            <value>
+                <li>Map_SpaceHome</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/IncidentDef[defName="Spaceports_PrisonerTransfer"]/targetTags</xpath> 
+            <value>
+                <li>Map_SpaceHome</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/IncidentDef[defName="Spaceports_SpicyPawnLending"]/targetTags</xpath> 
+            <value>
+                <li>Map_SpaceHome</li>
+            </value>
+        </match>
+    </Operation>
+
+    <!--Skyfallers-->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[@Name="Spaceports_SkyfallerIncomingBase"]/skyfaller</xpath> 
+            <value>
+                <hitRoof>false</hitRoof>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[@Name="Spaceports_SkyfallerLeavingBase"]/skyfaller</xpath> 
+            <value>
+                <hitRoof>false</hitRoof>
+            </value>
+        </match>
+    </Operation>
+
+    <!--Compat patches for SOS2/Hospitality bridge-->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Save Our Ship 2</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Hospitality</li>
+                    </mods>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/IncidentDef[defName="VisitorGroup"]/targetTags</xpath> 
+                        <value>
+                            <li>Map_SpaceHome</li>
+                        </value>
+                    </match>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <!--VE Props integration-->
+    <!--VE mods might be 90% cringe unbalanced bloat but at least their art is good-->
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Props and Decor</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="Spaceports_ShuttleSkip"]/graphicData/texPath</xpath> 
+            <value>
+                <texPath>Things/Building/Spaceships/Skip/Skip_east</texPath>            
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Props and Decor</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="ShuttleSkip_Incoming"]/graphicData/texPath</xpath> 
+            <value>
+                <texPath>Things/Building/Spaceships/Skip/Skip_east</texPath>            
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Furniture Expanded - Props and Decor</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="ShuttleSkip_Leaving"]/graphicData/texPath</xpath> 
+            <value>
+                <texPath>Things/Building/Spaceships/Skip/Skip_east</texPath>            
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

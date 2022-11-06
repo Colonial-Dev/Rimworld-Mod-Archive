@@ -1,0 +1,183 @@
+<Defs>
+    <!--Processor-->
+    <ThingDef ParentName="BuildingBase">
+        <defName>Spaceports_FuelProcessor</defName>
+        <label>fusion fuel processor</label>
+        <description>A spacer-tech fuel processor. Must be placed in shallow water to operate; once activated, volatiles from supplied chemfuel are combined with siphoned water in its massive reaction tank and energized, setting off a complex chain of chemical reactions that ultimately resolve into a common variety of liquid fusion fuel.</description>
+        <thingClass>Spaceports.Buildings.Building_FuelProcessor</thingClass>
+        <category>Building</category>
+        <graphicData>
+          <texPath>Buildings/Fueling/FuelProcessor</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(3,3)</drawSize>
+        </graphicData>
+        <uiIconPath>Buildings/Fueling/FuelProcessor</uiIconPath>
+        <tickerType>Normal</tickerType>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <altitudeLayer>Building</altitudeLayer>
+        <pathCost>50</pathCost>
+        <statBases>
+          <WorkToBuild>2000</WorkToBuild>
+          <MaxHitPoints>500</MaxHitPoints>
+        </statBases>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <size>(3,3)</size>
+        <designationCategory>Misc</designationCategory>
+        <passability>Impassable</passability>
+        <clearBuildingArea>true</clearBuildingArea>
+        <costList>
+          <Plasteel>150</Plasteel>
+          <ComponentSpacer>5</ComponentSpacer>
+        </costList>
+        <building>
+          <ai_chillDestination>false</ai_chillDestination>
+          <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+        </building>
+        <terrainAffordanceNeeded></terrainAffordanceNeeded>
+        <placeWorkers>
+          <li>Spaceports.Buildings.PlaceWorker_FuelProcessor</li>
+        </placeWorkers>
+        <rotatable>false</rotatable>
+        <researchPrerequisites>
+          <li>Fabrication</li>
+        </researchPrerequisites>
+        <comps>
+          <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <basePowerConsumption>1000</basePowerConsumption>
+            <soundAmbientPowered>ChemfuelFiredGenerator_Ambience</soundAmbientPowered>
+          </li>
+          <li Class="CompProperties_Flickable"/>
+          <li Class="CompProperties_AffectedByFacilities">
+            <linkableFacilities>
+              <li>Spaceports_FuelTank</li>
+            </linkableFacilities>
+          </li>
+          <li Class="CompProperties_Refuelable">
+            <fuelConsumptionRate>150</fuelConsumptionRate>
+            <fuelCapacity>150</fuelCapacity>
+            <fuelFilter>
+              <thingDefs>
+                <li>Chemfuel</li>
+              </thingDefs>
+            </fuelFilter>
+            <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+          </li>
+          <li Class="CompProperties_Glower">
+            <glowRadius>3</glowRadius>
+            <glowColor>(255,255,255,0)</glowColor>
+          </li>
+        </comps>
+      </ThingDef>
+      <!--Fuel Tank-->
+      <ThingDef ParentName="BuildingBase">
+        <defName>Spaceports_FuelTank</defName>
+        <label>fusion fuel tank</label>
+        <description>A spacer-tech tank designed to hold liquid fusion fuel. Its integrated cooling systems must run at all times, or the fuel inside will begin to evaporate away.</description>
+        <thingClass>Spaceports.Buildings.Building_FuelTank</thingClass>
+        <category>Building</category>
+        <graphicData>
+          <texPath>Buildings/Fueling/FuelTank/FuelTank</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(1,2)</drawSize>
+        </graphicData>
+        <uiIconPath>Buildings/Fueling/FuelTank/FuelTank_north</uiIconPath>
+        <tickerType>Normal</tickerType>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <altitudeLayer>Building</altitudeLayer>
+        <pathCost>50</pathCost>
+        <statBases>
+          <WorkToBuild>500</WorkToBuild>
+          <MaxHitPoints>500</MaxHitPoints>
+        </statBases>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <size>(1,2)</size>
+        <designationCategory>Misc</designationCategory>
+        <passability>Impassable</passability>
+        <clearBuildingArea>true</clearBuildingArea>
+        <costList>
+          <Plasteel>75</Plasteel>
+          <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <building>
+          <ai_chillDestination>false</ai_chillDestination>
+          <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+        </building>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <researchPrerequisites>
+          <li>Fabrication</li>
+        </researchPrerequisites>
+        <comps>
+          <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <basePowerConsumption>100</basePowerConsumption>
+          </li>
+          <li Class="CompProperties_Flickable"/>
+          <li Class="CompProperties_Facility">
+              <maxSimultaneous>6</maxSimultaneous>
+              <maxDistance>20</maxDistance>
+          </li>
+          <li Class="CompProperties_Glower">
+            <glowRadius>2</glowRadius>
+            <glowColor>(255,255,255,0)</glowColor>
+          </li>
+        </comps>
+      </ThingDef>
+      <!--Dispenser-->
+      <ThingDef ParentName="BuildingBase">
+        <defName>Spaceports_FuelDispenser</defName>
+        <label>fusion fuel terminal</label>
+        <description>A terminal used to purchase fusion fuel for small shuttlecraft. Must be placed adjacent to a landing pad to work; once payment has been verified, pumps inside the pad will draw fuel from fuel tanks on the same powernet.</description>
+        <thingClass>Spaceports.Buildings.Building_FuelDispenser</thingClass>
+        <category>Building</category>
+        <graphicData>
+          <texPath>Buildings/Fueling/FuelTerminal</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <uiIconPath>Buildings/Fueling/FuelTerminal</uiIconPath>
+        <tickerType>Normal</tickerType>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <altitudeLayer>Building</altitudeLayer>
+        <pathCost>50</pathCost>
+        <statBases>
+          <WorkToBuild>250</WorkToBuild>
+          <MaxHitPoints>500</MaxHitPoints>
+        </statBases>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <size>(1,1)</size>
+        <designationCategory>Misc</designationCategory>
+        <passability>Impassable</passability>
+        <clearBuildingArea>true</clearBuildingArea>
+        <costList>
+          <Plasteel>25</Plasteel>
+          <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <building>
+          <ai_chillDestination>false</ai_chillDestination>
+          <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+        </building>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <researchPrerequisites>
+          <li>Fabrication</li>
+        </researchPrerequisites>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>        
+        <rotatable>false</rotatable>
+        <comps>
+          <li Class="CompProperties_Power">
+            <compClass>CompPowerTrader</compClass>
+            <basePowerConsumption>50</basePowerConsumption>
+          </li>
+          <li Class="CompProperties_Flickable"/>
+          <li Class="CompProperties_Glower">
+            <glowRadius>1</glowRadius>
+            <glowColor>(255,255,255,0)</glowColor>
+          </li>
+          <li Class="CompProperties_Facility">
+            <maxSimultaneous>1</maxSimultaneous>
+            <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+          </li>
+        </comps>
+      </ThingDef>
+</Defs>

@@ -1,0 +1,28 @@
+<Defs>
+
+  <IncidentDef>
+    <defName>Spaceports_TraderShuttleArrival</defName>
+    <label>trader shuttle arrival</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Spaceports.Incidents.IncidentWorker_TraderShuttleArrival</workerClass>
+    <category>FactionArrival</category>
+    <baseChance>0</baseChance>
+    <requireColonistsPresent>False</requireColonistsPresent>
+  </IncidentDef>
+  
+  <IncidentDef>
+    <defName>Spaceports_VisitorShuttleArrival</defName>
+    <label>visitor shuttle arrival</label>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Spaceports.Incidents.IncidentWorker_VisitorShuttleArrival</workerClass>
+    <category>FactionArrival</category>
+    <baseChance>0</baseChance>
+    <pointsScaleable>true</pointsScaleable>
+    <requireColonistsPresent>False</requireColonistsPresent>
+  </IncidentDef>
+
+</Defs>

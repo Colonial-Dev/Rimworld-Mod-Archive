@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Clonebay_Refine.label>refinado de la biomasa prima</Clonebay_Refine.label>
+    <Clonebay_Refine.description>Aprender cómo convertir la proteína comestible en biomasa prima en una refinería.</Clonebay_Refine.description>
+
+	<Clonebay_ScannerImplanting.label>>implante de escáner neural</Clonebay_ScannerImplanting.label>
+    <Clonebay_ScannerImplanting.description>Aprender los procedimientos necesarios para implantar con seguridad y eficacia una red de mallas de escaneo neural en un cerebro humano.</Clonebay_ScannerImplanting.description>
+
+	<Clonebay_Clonebay.label>bahía de clones</Clonebay_Clonebay.label>
+    <Clonebay_Clonebay.description>Comprender cómo construir una bahía de clones que pueda recibir y trabajar con las señales emitidas por los escáneres neurales.</Clonebay_Clonebay.description>
+
+	<Clonebay_Advanced.label>escáneres neurales orgánicos</Clonebay_Advanced.label>
+    <Clonebay_Advanced.description>Una vez completada, las bahías de clones harán crecer automáticamente un escáner neural orgánico en todos los nuevos clones.</Clonebay_Advanced.description>
+
+</LanguageData>

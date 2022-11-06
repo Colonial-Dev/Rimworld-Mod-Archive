@@ -1,0 +1,31 @@
+<Defs>
+
+  <DutyDef>
+    <defName>Spaceports_TryShuttleWoundedGuest</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="Spaceports.JobGivers.JobGiver_TryShuttleWoundedGuest" />
+        <li Class="JobGiver_ExitMapBest">
+          <defaultLocomotion>Jog</defaultLocomotion>
+          <jobMaxDuration>500</jobMaxDuration>
+          <forceCanDigIfAnyHostileActiveThreat>true</forceCanDigIfAnyHostileActiveThreat>
+          <forceCanDigIfCantReachMapEdge>true</forceCanDigIfCantReachMapEdge>
+        </li>
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+  <!--<DutyDef>
+    <defName>Spaceports_EnterTransporterAndDefendSelf</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="JobGiver_AIDefendSelf">
+          <targetAcquireRadius>35</targetAcquireRadius>
+          <targetKeepRadius>40</targetKeepRadius>
+        </li>
+        <li Class="JobGiver_EnterTransporter" />
+      </subNodes>
+    </thinkNode>
+  </DutyDef>-->
+
+</Defs>

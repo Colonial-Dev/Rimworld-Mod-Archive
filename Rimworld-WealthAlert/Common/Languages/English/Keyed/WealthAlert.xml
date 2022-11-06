@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<WealthAlertName>Wealth Alert</WealthAlertName>
+	<WealthAlertAddWT>Add threshold to stack</WealthAlertAddWT>	
+	<WealthAlertRemWT>Remove threshold from stack</WealthAlertRemWT>
+	<WealthAlertDefault>Reset stack to default (expectation moodlet thresholds)</WealthAlertDefault>
+	<WealthAlertFull>Stack full - cannot add threshold.</WealthAlertFull>
+	<WealthAlertTrippedLabel>Wealth threshold exceeded</WealthAlertTrippedLabel>
+	<WealthAlertTripped>Alert: {0} has exceeded {1} wealth.\n\nCurrent wealth: {2}</WealthAlertTripped>
+	<WealthAlertDroppedLabel>Wealth threshold lowered</WealthAlertDroppedLabel>
+	<WealthAlertDropped>Alert: your colony has dropped below its most recent wealth threshold of {0} wealth.\n\nThe new most recent wealth threshold is {1} wealth.\n\nCurrent wealth: {2}</WealthAlertDropped>
+</LanguageData>

@@ -1,0 +1,79 @@
+<Defs>
+    <ThingDef Name="Spaceports_SkyfallerLeavingBase" ParentName="SkyfallerBase" Abstract="True">
+        <size>(5,3)</size>
+        <graphicData>
+          <texPath>Buildings/Shuttles/TestShuttle</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(6,3)</drawSize>
+        </graphicData>
+        <label>shuttle (leaving)</label>
+        <thingClass>FlyShipLeaving</thingClass>
+        <skyfaller>
+          <movementType>Decelerate</movementType>
+          <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+          <shadowSize>(5.5,3.5)</shadowSize>
+          <motesPerCell>1</motesPerCell>
+          <reversed>true</reversed>
+          <anticipationSound>Spaceports_LeavingA</anticipationSound>
+          <anticipationSoundTicks>-10</anticipationSoundTicks>
+          <ticksToImpactRange>-40~-15</ticksToImpactRange>
+          <moteSpawnTime>0.05</moteSpawnTime>
+          <angleCurve>
+            <points>
+              <li>(0,90)</li>
+              <li>(1,70)</li>
+            </points>
+          </angleCurve>
+          <rotationCurve>
+            <points>
+              <li>(0,0)</li>
+              <li>(0.15,10)</li>
+              <li>(0.5,-5)</li>
+            </points>
+          </rotationCurve>
+          <zPositionCurve>
+            <points>
+              <li>(0,0)</li>
+              <li>(0.08,2)</li>
+            </points>
+          </zPositionCurve>
+          <speedCurve>
+            <points>
+              <li>(0,0.2)</li>
+              <li>(0.4,0.7)</li>
+            </points>
+          </speedCurve>
+        </skyfaller>
+      </ThingDef>
+
+      <ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+        <defName>RoyaltyShuttle_Leaving</defName>
+        <graphicData>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(6,3)</drawSize>
+          <color>(162,164,149)</color>
+        </graphicData>
+    </ThingDef>
+
+      <ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+        <defName>ShuttleA_Leaving</defName>
+        <graphicData>
+          <texPath>Buildings/Shuttles/ShuttleA</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <shaderType>CutoutFlying</shaderType>
+          <drawSize>(6,3)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <ThingDef ParentName="Spaceports_SkyfallerLeavingBase">
+      <defName>ShuttleSkip_Leaving</defName>
+      <graphicData>
+        <texPath>Buildings/Shuttles/TestShuttle</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <shaderType>CutoutFlying</shaderType>
+        <drawSize>(5,5)</drawSize>
+      </graphicData>
+  </ThingDef>
+</Defs>

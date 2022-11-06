@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<PES_ModName>Permadeath Enforcement Suite</PES_ModName>
+	<PES_SaveOnPositive>Save on positive and neutral events?</PES_SaveOnPositive>
+	<PES_AllowStorytellerAccess>Enable storyteller options access? *</PES_AllowStorytellerAccess>
+	<PES_DisableDoubleAutosave>Disable double autosave? *</PES_DisableDoubleAutosave>
+	<PES_Explanation>\n* Enabling these options will require a new save and will render any in-progress saves with different settings inacessible until they are reverted.</PES_Explanation>
+	<PES_NullGameOnly>These settings can only be modified when no game is loaded.</PES_NullGameOnly>
+	
+</LanguageData>

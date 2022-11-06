@@ -1,0 +1,178 @@
+<Defs>
+
+  <ThingDef Name="Spaceports_ShuttleBase" ParentName="BuildingBase" Abstract="True">
+    <label>shuttle</label>
+    <description>A spacer-tech shuttle designed for transit between surface and orbit, or between moons of a planetary system.</description>
+    <thingClass>Spaceports.Buildings.Building_Shuttle</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <passability>Impassable</passability>
+    <size>(5,3)</size>
+    <graphicData>
+      <texPath>Buildings/Shuttles/TestShuttle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(6,3)</drawSize>
+      <shadowData>
+        <volume>(4.1, 1.0, 1.8)</volume>
+        <offset>(0, 0, -0.1)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>1</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <canOverlapZones>true</canOverlapZones>
+    <killedLeavings>
+      <Plasteel>50</Plasteel>
+      <Uranium>50</Uranium>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </killedLeavings>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+    <drawerType>MapMeshOnly</drawerType>
+    <repairEffect>ConstructMetal</repairEffect>
+    <forceDebugSpawnable>true</forceDebugSpawnable>
+    <uiIconScale>1.4</uiIconScale>
+    <building>
+      <claimable>false</claimable>
+      <isEdifice>false</isEdifice>
+      <soundAmbient>Spaceports_ShuttleAmbianceA</soundAmbient>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Shuttle" />
+      <li Class="CompProperties_Transporter">
+        <massCapacity>1000</massCapacity>
+        <max1PerGroup>true</max1PerGroup>
+        <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
+        <showOverallStats>false</showOverallStats>
+        <pawnLoadedSound MayRequire="Ludeon.RimWorld.Royalty">Shuttle_PawnLoaded</pawnLoadedSound>
+        <pawnExitSound MayRequire="Ludeon.RimWorld.Royalty">Shuttle_PawnExit</pawnExitSound>
+      </li>
+    </comps>
+    <interactionCellOffset>(0,0,-2)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+  </ThingDef>
+
+  <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_RoyaltyShuttle</defName>
+    <graphicData>
+      <color>(162,164,149)</color>
+    </graphicData>
+    <building>
+      <soundAmbient>Spaceports_ShuttleAmbianceA</soundAmbient>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_ShuttleA</defName>
+    <graphicData>
+      <texPath>Buildings/Shuttles/ShuttleA</texPath>
+    </graphicData>
+  </ThingDef>
+
+
+  <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_ShuttleB</defName>
+    <graphicData>
+      <texPath>Buildings/Shuttles/TestShuttle</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_ShuttleC</defName>
+    <graphicData>
+      <texPath>Buildings/Shuttles/TestShuttle</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_ShuttleD</defName>
+    <graphicData>
+      <texPath>Buildings/Shuttles/TestShuttle</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_ShuttleSkip</defName>
+    <graphicData>
+      <drawSize>(5,5)</drawSize>
+      <texPath>Buildings/Shuttles/TestShuttle</texPath>
+    </graphicData>
+  </ThingDef>
+
+
+  <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_ShuttleSuperpod</defName>
+    <graphicData>
+      <texPath>Buildings/Shuttles/TestShuttle</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_ShuttleInert</defName>
+    <label>inert shuttle</label>
+    <description>An ancient shuttle, scarred and worn out by endless centuries spent trawling between stars. Its reactor has been rendered useless, making it only good for scrap.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/Shuttles/ShuttleA</texPath>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>1</Flammability>
+      <WorkToBuild>800</WorkToBuild>
+    </statBases>
+    <killedLeavings Inherit="False">
+      <Steel>4</Steel>
+      <Plasteel>7</Plasteel>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </killedLeavings>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>70</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <preventSkyfallersLandingOn>true</preventSkyfallersLandingOn>
+    <building Inherit="False">
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+      <claimable>false</claimable>
+      <isEdifice>false</isEdifice>
+      <alwaysDeconstructible>true</alwaysDeconstructible>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="Spaceports_ShuttleBase">
+    <defName>Spaceports_SurpriseShuttle</defName>
+    <label>mysterious shuttle</label>
+    <description>A mysterious shuttlecraft. Its transponder has been disabled, and all attempts at remote communication have failed. Approach with caution.</description>
+    <thingClass>Spaceports.Buildings.Building_SurpriseShuttle</thingClass>
+    <graphicData>
+      <texPath>Buildings/Shuttles/ShuttleA</texPath>
+    </graphicData>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>70</Plasteel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>8</explosiveRadius>
+        <explosiveDamageType>BombSuper</explosiveDamageType>
+        <explodeOnKilled>false</explodeOnKilled>
+        <chanceNeverExplodeFromDamage>1.0</chanceNeverExplodeFromDamage>
+        <wickTicks>
+          <min>190</min>
+          <max>200</max>
+        </wickTicks>
+      </li>
+    </comps>
+  </ThingDef>
+  </Defs>

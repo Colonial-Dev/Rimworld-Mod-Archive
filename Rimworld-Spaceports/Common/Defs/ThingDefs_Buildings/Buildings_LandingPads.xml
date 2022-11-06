@@ -1,0 +1,57 @@
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Spaceports_ShuttleLandingPad</defName>
+    <label>shuttle landing pad</label>
+    <description>An automated landing pad for shuttlecraft. An integrated deep-field transmitter broadcasts the pad's availability and status across the local solar system, bringing in visitors from across the world and beyond.</description>
+    <thingClass>Spaceports.Buildings.Building_ShuttlePad</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/ShuttleLandingPad/ShuttleLandingPad</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,5)</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+    </statBases>
+    <rotatable>false</rotatable>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <size>(7,5)</size>
+    <designationCategory>Misc</designationCategory>
+    <passability>Standable</passability>
+    <pathCost>75</pathCost>
+    <clearBuildingArea>true</clearBuildingArea>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>Spaceports_FuelDispenser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

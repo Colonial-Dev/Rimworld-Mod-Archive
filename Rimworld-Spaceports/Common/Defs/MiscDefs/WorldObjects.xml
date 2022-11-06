@@ -1,0 +1,19 @@
+<Defs>
+
+    <WorldObjectDef>
+        <defName>Spaceports_ShuttleWO</defName>
+        <label>shuttle</label>
+        <description>A shuttle in flight.</description>
+        <worldObjectClass>TravelingTransportPods</worldObjectClass>
+        <texture>World/WorldObjects/Caravan</texture>
+        <useDynamicDrawer>true</useDynamicDrawer>
+        <expandingIcon>true</expandingIcon>
+        <expandingIconTexture>World/WorldObjects/Expanding/TravelingTransportPods</expandingIconTexture>
+        <expandingIconPriority>60</expandingIconPriority>
+        <expandMore>true</expandMore>
+        <expandingIconDrawSize>1.6</expandingIconDrawSize>
+        <allowCaravanIncidentsWhichGenerateMap>true</allowCaravanIncidentsWhichGenerateMap>
+        <rotateGraphicWhenTraveling>true</rotateGraphicWhenTraveling>
+      </WorldObjectDef>
+
+</Defs>

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b59a353b-c6cc-49f2-8ed6-a962e0a8fb48": {
+      "ProjectGuid": "b59a353b-c6cc-49f2-8ed6-a962e0a8fb48",
+      "DisplayName": "WealthAlert",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

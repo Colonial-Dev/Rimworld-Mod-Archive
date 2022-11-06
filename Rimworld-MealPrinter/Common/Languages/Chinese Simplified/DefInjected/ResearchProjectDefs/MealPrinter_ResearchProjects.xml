@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <MealPrinter_MealPrinting.label>膳食打印技术</MealPrinter_MealPrinting.label>
+  <MealPrinter_MealPrinting.description>解锁膳食打印机的制造。这是一种太空时代的设备，利用蛋白质测序和基础粒子打印技术来生产简易餐点。</MealPrinter_MealPrinting.description>
+
+  <MealPrinter_HighRes.label>高解析粒子打印</MealPrinter_HighRes.label>
+  <MealPrinter_HighRes.description>升级膳食打印机的打印钻头组件，使其能够更精密的对粒子进行排列，允许打印更加复杂的膳食。（解锁复杂食物的生产。）</MealPrinter_HighRes.description>
+
+  <MealPrinter_DeepResequencing.label>深度蛋白质再测序</MealPrinter_DeepResequencing.label>
+  <MealPrinter_DeepResequencing.description>升级膳食打印机内部蛋白质解构序列的穿透能力，允许大批量处理食材。（解锁批量生产代餐条。）</MealPrinter_DeepResequencing.description>
+
+  <MealPrinter_Recombinators.label>原子再构筑序列</MealPrinter_Recombinators.label>
+  <MealPrinter_Recombinators.description>给予膳食打印机一个能够将作为废料排出的非食用部分转化为可使用材料的再构筑模块。尽管会降低食物的口感、外表和整体美观度，但可以显著提高食材利用率。（解锁高效营养糊生产）</MealPrinter_Recombinators.description>
+
+</LanguageData>

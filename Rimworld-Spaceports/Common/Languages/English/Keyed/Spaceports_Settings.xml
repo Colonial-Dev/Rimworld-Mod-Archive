@@ -1,0 +1,65 @@
+<LanguageData>
+	<SpaceportsModName>Spaceports</SpaceportsModName>
+	<!--Traffic Control Settings-->
+	<Spaceports_TCHeader><![CDATA[<i>Traffic Control Settings</i>]]></Spaceports_TCHeader>
+	<Spaceports_AirspaceLockdownToggle>Enable airspace lockdown when hostiles are on map?</Spaceports_AirspaceLockdownToggle>
+	<Spaceports_AirspaceLockdownTooltip>If enabled, when hostiles enter the map, your colony will automatically go into airspace lockdown. No new shuttles of any type will arrive, but any landed shuttles can still depart.\n\nIt is strongly recommended that you leave this ON to avoid diplomatic consequences from visitors being caught in crossfire.</Spaceports_AirspaceLockdownTooltip>
+	<Spaceports_AutoLeaveToggle>Enable visitors and traders automatically evacuating if hostiles enter the map?</Spaceports_AutoLeaveToggle>
+	<Spaceports_AutoLeaveTooltip>If enabled, visitors and traders (but NOT Hospitality guests) will automatically try to depart via shuttle when hostiles enter the map.\n\nIt is strongly recommended that you leave this ON to avoid diplomatic consequences from visitors being caught in the crossfire.</Spaceports_AutoLeaveTooltip>
+	<Spaceports_RandomFlow>Enable random chillspot selection?</Spaceports_RandomFlow>
+	<Spaceports_RandomFlowTooltip>If enabled, visiting parties will select an open chillspot randomly rather than using the closest one to their pad.</Spaceports_RandomFlowTooltip>
+	<Spaceports_EnableShuttleLimitToggle>Enable shuttle limit?</Spaceports_EnableShuttleLimitToggle>
+	<Spaceports_ShuttleLimitLabel>How many shuttles can be landed at your colony simultaneously.</Spaceports_ShuttleLimitLabel>
+	<!--Visitor Settings-->
+	<Spaceports_VisitorHeader><![CDATA[<i>Visitor Shuttle Settings</i>]]></Spaceports_VisitorHeader>
+	<Spaceports_RegularVisitorsToggle>Enable fixed-interval visitors?</Spaceports_RegularVisitorsToggle>
+	<Spaceports_RegularVisitorsTooltip>When enabled, a visitor shuttle will try to land at your colony on a fixed interval. Default on.\n\nIf disabled, visitor shuttles will instead have the potential to fire as events.</Spaceports_RegularVisitorsTooltip>
+	<Spaceports_VisitorNotificationsToggle>Receive notifications pertaining to visitor shuttles?</Spaceports_VisitorNotificationsToggle>
+	<Spaceports_VisitorNotificationsTooltip>When enabled, pushes notifications to the top-left feed whenever a visitor (NOT trader) shuttle arrives or leaves. Default off.</Spaceports_VisitorNotificationsTooltip>
+	<Spaceports_VisitorFreqSlider>How frequently visitor shuttles will attempt to land at your colony, in days.</Spaceports_VisitorFreqSlider>
+	<Spaceports_VisitorFreqSlider_Count> Currently: </Spaceports_VisitorFreqSlider_Count>
+	<Spaceports_VisitorStaySlider>The maximum amount of time visitor shuttles will stay at your colony, in days.</Spaceports_VisitorStaySlider>
+	<!--Trader Settings-->
+	<Spaceports_TraderHeader><![CDATA[<i>Trader Shuttle Settings</i>]]></Spaceports_TraderHeader>
+	<Spaceports_RegularTradersToggle>Enable fixed-interval traders?</Spaceports_RegularTradersToggle>
+	<Spaceports_RegularTradersTooltip>When enabled, a trader shuttle will try to land at your colony on a fixed interval. Default on.\n\nIf disabled, trader shuttles will instead have the potential to fire as events.</Spaceports_RegularTradersTooltip>
+	<Spaceports_TraderNotificationsToggle>Receive notifications pertaining to trader shuttles?</Spaceports_TraderNotificationsToggle>
+	<Spaceports_TraderNotificationsTooltip>When enabled, pushes notifications to the top-left feed whenever a trader shuttle arrives or leaves. Default off.</Spaceports_TraderNotificationsTooltip>
+	<Spaceports_TraderFreqSlider>How frequently trader shuttles will attempt to land at your colony, in days.</Spaceports_TraderFreqSlider>
+	<Spaceports_TraderStaySlider>The maximum amount of time trader shuttles will stay at your colony, in days.</Spaceports_TraderStaySlider>
+	<!--Hospitality Settings-->
+	<Spaceports_HospitalityHeader><![CDATA[<i>Hospitality Integration Settings</i>]]></Spaceports_HospitalityHeader>
+	<Spaceports_HospitalityModeToggle>Enable shuttles as an arrival method for Hospitality guests?</Spaceports_HospitalityModeToggle>
+	<Spaceports_HospitalityModeToggleTooltip>When enabled, a configurable percentage of Hospitality visitors will arrive via shuttle instead of on foot.\n\nNote that this percentage will not be exact, as tribal faction guests will always arrive on foot.</Spaceports_HospitalityModeToggleTooltip>
+	<Spaceports_HospitalityModeFreqSlider>What percentage of Hospitality visitor events will arrive via shuttle.</Spaceports_HospitalityModeFreqSlider>
+	<!--DBH settings-->
+	<Spaceports_DBHHeader><![CDATA[<i>DBH Integration Settings</i>]]></Spaceports_DBHHeader>
+	<Spaceports_DBHReflection>Enable DBH integration for fuel processors?</Spaceports_DBHReflection>
+	<Spaceports_DBHReflectionTooltip>When enabled, fusion fuel processors will pull the water they need for wet mode from the DBH plumbing network.\n\nSince this feature uses C# reflection to safely perform conditional access to DBH's code, it can have a minor performance impact that scales with each processor built. </Spaceports_DBHReflectionTooltip>
+	<!--Animation Settings-->
+	<Spaceports_AnimHeader><![CDATA[<i>Animation Settings</i>]]></Spaceports_AnimHeader>
+	<Spaceports_GlobalAnimationToggle>Enable landing pad animations?</Spaceports_GlobalAnimationToggle>
+	<Spaceports_GlobalAnimationToggle_Label>When enabled, shuttle landing pads will display dynamic animations. Disable this if you find it annoying or have concerns regarding performance or epilepsy.\n\nEven when disabled, landing pads will still show static visual changes.</Spaceports_GlobalAnimationToggle_Label>
+	<Spaceports_RimLightsToggle>Enable pad rim light animation?</Spaceports_RimLightsToggle>
+	<Spaceports_RimLightsToggleTooltip>Toggle rim light animation on shuttle landing pads (the four red lights in the corners.)</Spaceports_RimLightsToggleTooltip>
+	<Spaceports_LandingPatternToggle>Enable landing pattern animation?</Spaceports_LandingPatternToggle>
+	<Spaceports_LandingPatternToggleTooltip>Toggle landing pattern animation on shuttle landing pads (the inward-moving green dots that activate when a shuttle is incoming.)</Spaceports_LandingPatternToggleTooltip>
+	<Spaceports_BeaconAnimationToggle>Enable beacon animations?</Spaceports_BeaconAnimationToggle>
+	<Spaceports_BeaconAnimationTooltip>When enabled, spaceport beacons will display dynamic animations. Disable this if you find it annoying or have concerns regarding performance or epilepsy.</Spaceports_BeaconAnimationTooltip>
+	<Spaceports_BeaconDishToggle>Enable beacon radar dish animation?</Spaceports_BeaconDishToggle>
+	<Spaceports_BeaconDishTooltip>Toggle the spinning radar dish on spaceport beacons.</Spaceports_BeaconDishTooltip>
+	<Spaceports_BeaconRimLightsToggle>Enable beacon rim light animation?</Spaceports_BeaconRimLightsToggle>
+	<Spaceports_BeaconRimLightsTooltip>Toggle rim light animation on spaceport beacons (the four red lights in the corners.)</Spaceports_BeaconRimLightsTooltip>
+	<!--Event Settings-->
+	<Spaceports_EventHeader><![CDATA[<i>Event Settings</i>]]></Spaceports_EventHeader>
+	<Spaceports_EventToggle>Enable new events?</Spaceports_EventToggle>
+	<Spaceports_EventToggleTooltip>Toggles the new events added by Spaceports.</Spaceports_EventToggleTooltip>
+	<Spaceports_KesslerSyndromeToggle>Enable Kessler Syndrome event?</Spaceports_KesslerSyndromeToggle>
+	<Spaceports_InterstellarDerelictToggle>Enable Interstellar Derelict event?</Spaceports_InterstellarDerelictToggle>
+	<Spaceports_MysteryCargoToggle>Enable Mysterious Cargo event?</Spaceports_MysteryCargoToggle>
+	<Spaceports_PrisonerTransferToggle>Enable Prisoner Transfer event?</Spaceports_PrisonerTransferToggle>
+	<Spaceports_ShuttleMedevacToggle>Enable Shuttle Medevac event?</Spaceports_ShuttleMedevacToggle>
+	<Spaceports_SpicyPawnLendingToggle>Enable Professional Help event?</Spaceports_SpicyPawnLendingToggle>
+	<!--Reset to Default-->
+	<Spaceports_ResetToDefault>Reset all to default</Spaceports_ResetToDefault>
+</LanguageData>

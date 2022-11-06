@@ -1,0 +1,30 @@
+<Defs>
+
+    <GameConditionDef>
+        <defName>Spaceports_KesslerSyndrome</defName>
+        <conditionClass>Spaceports.Incidents.GameCondition_KesslerSyndrome</conditionClass>
+        <label>kessler syndrome</label>
+        <description>A debris cascade is sweeping the local orbit-space. All shuttle travel has been rendered impossible.</description>
+        <endMessage>The debris cascade has settled.</endMessage>
+        <letterText>You’ve just received a wide-band warning of a massive ongoing debris cascade within the planet’s local orbit-space.\n\nLikely set in motion years ago by a freak impact event, the cascade has just recently reached critical mass - and now thousands of years worth of derelict satellites and spacecraft are coming home to roost.\n\nAll shuttle travel has been rendered impossible until the cascade terminates and atmospheric friction cleans out the primary transit zones. The warning says this could take anywhere from a season to over a year.</letterText>
+        <letterDef>NegativeEvent</letterDef>
+        <canBePermanent>true</canBePermanent>
+      </GameConditionDef>
+
+      <IncidentDef>
+        <defName>Spaceports_KesslerSyndrome</defName>
+        <label>kessler syndrome</label>
+        <category>Misc</category>
+        <targetTags>
+          <li>World</li>
+        </targetTags>
+        <workerClass>IncidentWorker_MakeGameCondition</workerClass>
+        <gameCondition>Spaceports_KesslerSyndrome</gameCondition>
+        <letterLabel>Kessler syndrome</letterLabel>
+        <letterDef>NegativeEvent</letterDef>
+        <baseChance>0.5</baseChance>
+        <minRefireDays>240</minRefireDays>
+        <durationDays>15~60</durationDays>
+      </IncidentDef>
+
+</Defs>

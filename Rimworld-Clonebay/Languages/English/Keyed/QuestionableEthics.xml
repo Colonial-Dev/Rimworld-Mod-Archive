@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- Messages -->
+  <Clonebay_Done>{0} has been successfully cloned and reintegrated.</Clonebay_Done>
+  <Clonebay_CannotClone>Failed to clone and reintegrate {0} - no powered, inactive bay found!</Clonebay_CannotClone>
+</LanguageData>

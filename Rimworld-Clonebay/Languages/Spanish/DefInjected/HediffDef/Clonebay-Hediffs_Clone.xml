@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <QE_CloneStatus.label>Cerebro escaneado</QE_CloneStatus.label>
+  <QE_BrainTemplated.label>cerebro escaneado</QE_BrainTemplated.label>
+
+  <Clonebay_Implant.label>Escáner Neural</Clonebay_Implant.label>
+  <Clonebay_Implant.labelNoun>escáner neural</Clonebay_Implant.labelNoun>
+
+  <QE_Headache.label>dolor de cabeza</QE_Headache.label>
+
+</LanguageData>

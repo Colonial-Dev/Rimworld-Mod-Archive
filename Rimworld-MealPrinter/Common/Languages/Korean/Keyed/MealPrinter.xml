@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Meal Descriptions-->
+	<SimpleMealDesc>한 가지 재료로 인쇄한 간단한 식사입니다.\n\n직접 요리하는 것과 영양 효율이 같습니다.</SimpleMealDesc>
+	<FineMealDesc>한 가지 재료로 인쇄한 복잡한 식사입니다.\n\n한 가지 재료만 사용할 수 있는 프린터의 한계로 영양 효율은 낮지만, 매우 맛있습니다.</FineMealDesc>
+	<PasteMealDesc>단백질, 탄수화물, 비타민, 아미노산, 미네랄을 혼합해 인쇄했습니다.\n\n매우 역겹지만, 영양이 풍부하고 영양 효율이 비할 바 없이 높습니다.</PasteMealDesc>
+	
+	<!--Meal print eff.-->
+	<SimpleMealEff>50</SimpleMealEff>
+	<FineMealEff>25</FineMealEff>
+	<PasteMealEff>85</PasteMealEff>
+
+	<!--Button text and descriptions-->
+	<ButtonBulkPrintBars>영양 바 대량 인쇄</ButtonBulkPrintBars>
+	<ButtonBulkPrintBarsDesc>비상용 비축이나 상단 보급품 및 기타 등을 위해 영양 바를 대량 인쇄합니다.</ButtonBulkPrintBarsDesc>
+	<ButtonBulkPrintBarsDescNoResearch>비상용 비축이나 상단 보급품 및 기타 등을 위해 영양 바를 대량 인쇄합니다.\n\n비활성화됨: 단백질 재배열 연구가 필요합니다.</ButtonBulkPrintBarsDescNoResearch>
+	<ButtonBulkPrintBarsDescNoPower>비상용 비축이나 상단 보급품 및 기타 등을 위해 영양 바를 대량 인쇄합니다.\n\n비활성화됨: 프린터에 전원이 공급되지 않았습니다!</ButtonBulkPrintBarsDescNoPower>
+	<PrintSettingButton>{0} 인쇄 중</PrintSettingButton>
+	
+	<!--Inspect Pane Text-->
+	<CurrentPrintSetting>\n현재 생산 설정: {0}.</CurrentPrintSetting>
+	<CurrentEfficiency>\n인쇄 영양 효율: {0}%</CurrentEfficiency>
+	
+	<!--Bulk print bars text-->
+	<SetBarBatchSize>{0}개의 영양 바 생산 (최대: {1})</SetBarBatchSize>
+	<CannotBulkPrintBars>영양 바를 대량 생산할 수 없습니다. 프린터에 재료가 충분하지 않습니다.</CannotBulkPrintBars>
+	<BarQuantity>수량</BarQuantity>
+	<PrintSettings>옵션</PrintSettings>
+	<PrintForbidden>인쇄한 영양 바를 금지하시겠습니까?</PrintForbidden>
+	<PrintRear>뒤에 영양 바를 인쇄하시겠습니까?</PrintRear>
+	<ConfirmPrint>인쇄</ConfirmPrint>
+
+	<!--Settings-->
+	<MealPrinterModName>Meal Printer</MealPrinterModName>
+	<PrintSFXLabel>인쇄 소리 효과를 사용하시겠습니까?</PrintSFXLabel>
+
+</LanguageData>

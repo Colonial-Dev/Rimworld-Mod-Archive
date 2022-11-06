@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SharpUtils</name>
+    </assembly>
+    <members>
+        <member name="T:SharpUtils.SharpAnim">
+            <summary>
+            Real-time animation solutions and tools.
+            </summary>
+        </member>
+        <member name="M:SharpUtils.SharpAnim.ConstructFrameStack(System.String,UnityEngine.Shader,System.Nullable{UnityEngine.Vector2},System.Nullable{UnityEngine.Color})">
+            <summary>
+            Wrapper used to construct a FrameStack.
+            </summary>
+            <param name="path">Path to the textures used in the FrameStack. Frames should be named name_a, name_b...</param>
+            <param name="shader">Optional - shader to use. The default is typically fine.</param>
+            <param name="DrawSize">Optional - draw size in cells.</param>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpUtils.SharpAnim.ConstructFrame(System.String,UnityEngine.Shader,System.Nullable{UnityEngine.Vector2},System.Nullable{UnityEngine.Color})">
+            <summary>
+            Wrapper used to construct a Frame.
+            </summary>
+            <param name="path">Path to the texture used in the Frame.</param>
+            <param name="shader">Optional - shader to use. The default is typically fine.</param>
+            <param name="DrawSize">Optional - draw size in cells.</param>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SharpUtils.SharpAnim.FrameStack">
+            <summary>
+            Derived class of Graphic_Collection used to store and access a sequence of animation frames. Should be constructed using ConstructFrameStack.
+            </summary>
+        </member>
+        <member name="T:SharpUtils.SharpAnim.Frame">
+            <summary>
+            Derived class of Graphic_Single used to store and access a single texture. Should be constructed using ConstructFrame.
+            </summary>
+        </member>
+        <member name="T:SharpUtils.SharpAnim.DrawOver">
+            <summary>
+            Basic animation object used to render a static texture onto a Thing.
+            </summary>
+        </member>
+        <member name="M:SharpUtils.SharpAnim.DrawOver.#ctor(SharpUtils.SharpAnim.Frame,Verse.Thing,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Construct a new DrawOver.
+            </summary>
+            <param name="frame">The Frame object holding the desired texture.</param>
+            <param name="thing">The Thing this DrawOver is attached to (e.g. a Building)</param>
+            <param name="xSize">X-axis draw size. 1f = one cell.</param>
+            <param name="ySize">Y-axis draw size. 1f = one cell.</param>
+            <param name="xOffset">X-axis draw offset. 1f = one cell.</param>
+            <param name="yOffset">Y-axis draw offset. 1f = one cell.</param>
+        </member>
+        <member name="M:SharpUtils.SharpAnim.DrawOver.Draw">
+            <summary>
+            Renders the DrawOver when called. Should be called in a Thing's Draw() or Tick() within any desired conditionals.
+            </summary>
+        </member>
+        <member name="T:SharpUtils.SharpAnim.DrawOverMulti">
+            <summary>
+            Basic animation object used to render multiple static textures onto a Thing, with the texture being rendered only changing on command.
+            </summary>
+        </member>
+        <member name="M:SharpUtils.SharpAnim.DrawOverMulti.#ctor(SharpUtils.SharpAnim.FrameStack,Verse.Thing,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Construct a new DrawOverMulti.
+            </summary>
+            <param name="frames">The FrameStack object holding the desired textures.</param>
+            <param name="thing">The Thing this DrawOverMulti is attached to (e.g. a Building)</param>
+            <param name="xSize">X-axis draw size. 1f = one cell.</param>
+            <param name="ySize">Y-axis draw size. 1f = one cell.</param>
+            <param name="xOffset">X-axis draw offset. 1f = one cell.</param>
+            <param name="yOffset">Y-axis draw offset. 1f = one cell.</param>
+        </member>
+        <member name="M:SharpUtils.SharpAnim.DrawOverMulti.Draw">
+            <summary>
+            Renders the DrawOverMulti when called. Should be called in a Thing's Draw() or Tick() within any desired conditionals.
+            </summary>
+        </member>
+        <member name="T:SharpUtils.SharpAnim.AnimateOver">
+            <summary>
+            Animation object used to render a sequence of frames onto a Thing.
+            </summary>
+        </member>
+        <member name="M:SharpUtils.SharpAnim.AnimateOver.#ctor(SharpUtils.SharpAnim.FrameStack,Verse.Thing,System.Int32,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Construct a new AnimateOver.
+            </summary>
+            <param name="frames">The FrameStack object holding the desired textures.</param>
+            <param name="thing">The Thing this AnimateOver is attached to (e.g. a Building)</param>
+            <param name="TicksPerFrame">The amount of ticks each texture in the FrameStack is displayed for.</param>
+            <param name="xSize">X-axis draw size. 1f = one cell.</param>
+            <param name="ySize">Y-axis draw size. 1f = one cell.</param>
+            <param name="xOffset">X-axis draw offset. 1f = one cell.</param>
+            <param name="yOffset">Y-axis draw offset. 1f = one cell.</param>
+        </member>
+        <member name="M:SharpUtils.SharpAnim.AnimateOver.Draw">
+            <summary>
+            Renders the AnimateOver when called. Should be called in a Thing's Draw() or Tick() within any desired conditionals.
+            </summary>
+        </member>
+        <member name="T:SharpUtils.SharpAnim.SpinOver">
+            <summary>
+            Animation object used to spin a single texture over a Thing.
+            </summary>
+        </member>
+        <member name="M:SharpUtils.SharpAnim.SpinOver.#ctor(SharpUtils.SharpAnim.Frame,Verse.Thing,System.Single,System.Single,System.Single,System.Single,System.Single,System.Int32,System.Boolean)">
+            <summary>
+            Construct a new SpinOver.
+            </summary>
+            <param name="frame">The Frame object holding the desired texture.</param>
+            <param name="thing">The Thing this DrawOver is attached to (e.g. a Building)</param>
+            <param name="DegreesPerTick">The # of degrees the texture will rotate per tick.</param>
+            <param name="xSize">X-axis draw size. 1f = one cell.</param>
+            <param name="ySize">Y-axis draw size. 1f = one cell.</param>
+            <param name="xOffset">X-axis draw offset. 1f = one cell.</param>
+            <param name="yOffset">Y-axis draw offset. 1f = one cell.</param>
+            <param name="direction">The direction of the spin. 0 for clockwise, 1 for counterclockwise.</param>
+            <param name="PowerDependent">Whether or not the Thing needs a powered CompPowerTrader to spin.</param>
+        </member>
+        <member name="M:SharpUtils.SharpAnim.SpinOver.Draw">
+            <summary>
+            Renders the SpinOver when called. Should be called in a Thing's Draw() or Tick() within any desired conditionals.
+            </summary>
+        </member>
+        <member name="T:SharpUtils.SharpPawn">
+            <summary>
+            Pawn-related tools.
+            </summary>
+        </member>
+        <member name="M:SharpUtils.SharpPawn.StripPawn(Verse.Pawn)">
+            <summary>
+            Clear a pawn's inventory, apparel and equipment.
+            </summary>
+            <param name="pawn"></param>
+        </member>
+        <member name="M:SharpUtils.SharpPawn.WipePawn(Verse.Pawn)">
+            <summary>
+            Wipe a pawn's skills and traits.
+            </summary>
+            <param name="pawn"></param>
+        </member>
+        <member name="T:SharpUtils.SharpGen">
+            <summary>
+            Tools and generators useful for implementing random behavior.
+            </summary>
+        </member>
+        <member name="T:SharpUtils.SharpTracking">
+            <summary>
+            Solutions and tools for keeping long-term tabs on game objects.
+            </summary>
+        </member>
+        <member name="M:SharpUtils.SharpTracking.GetTrackerComponent(Verse.Map)">
+            <summary>
+            Get the Tracker component attached to a given map. 
+            </summary>
+            <param name="map"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SharpUtils.SharpTracking.LoadTrackerIntoComponent(Verse.Map,SharpUtils.SharpTracking.Tracker)">
+            <summary>
+            Load a Tracker into the given Map's TrackerComponent.
+            </summary>
+            <param name="map"></param>
+            <param name="tracker"></param>
+        </member>
+    </members>
+</doc>

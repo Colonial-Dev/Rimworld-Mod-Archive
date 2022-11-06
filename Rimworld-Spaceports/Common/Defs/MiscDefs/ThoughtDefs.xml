@@ -1,0 +1,15 @@
+<Defs>
+    <ThoughtDef>
+        <defName>Spaceports_PsychicCharge</defName>
+        <durationDays>5</durationDays>
+        <stackLimit>3</stackLimit>
+        <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+        <stages>
+          <li>
+            <label>psychic charge echo</label>
+            <description>The scream from that shuttle's charge... it keeps echoing, piercing and prickling at the inside of my skull.</description>
+            <baseMoodEffect>-8</baseMoodEffect>
+          </li>
+        </stages>
+      </ThoughtDef>
+</Defs>

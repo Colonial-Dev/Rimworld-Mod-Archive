@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\PermadeathEnforcementSuite\Assemblies\PermadeathEnforcementSuite.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\PermadeathEnforcementSuite\Source\PermadeathEnforcementSuite\PermadeathEnforcementSuite\obj\Debug\PermadeathEnforcementSuite.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\PermadeathEnforcementSuite\Source\PermadeathEnforcementSuite\PermadeathEnforcementSuite\obj\Debug\PermadeathEnforcementSuite.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\PermadeathEnforcementSuite\Source\PermadeathEnforcementSuite\PermadeathEnforcementSuite\obj\Debug\PermadeathEnforcementSuite.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\PermadeathEnforcementSuite\Source\PermadeathEnforcementSuite\PermadeathEnforcementSuite\obj\Debug\PermadeathEnforcementSuite.csproj.AssemblyReference.cache

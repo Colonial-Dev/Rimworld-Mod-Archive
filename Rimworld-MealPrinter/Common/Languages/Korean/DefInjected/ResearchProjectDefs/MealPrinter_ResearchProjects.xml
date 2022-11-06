@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <MealPrinter_MealPrinting.label>음식 인쇄</MealPrinter_MealPrinting.label>
+  <MealPrinter_MealPrinting.description>단백질 재배열과 기초적인 분자 인쇄를 통해 맛있고 배부른 식사를 합성하는 우주 시대 장비음식 프린터를 짓습니다.</MealPrinter_MealPrinting.description>
+
+  <MealPrinter_HighRes.label>고해상도 분자 인쇄</MealPrinter_HighRes.label>
+  <MealPrinter_HighRes.description>분자 인쇄 헤드의 배치 해상도를 큰 폭으로 상승시키는 음식 프린터의 업그레이드로, 더 복잡한 식사를 인쇄할 수 있습니다(좋은 식사 인쇄 가능).</MealPrinter_HighRes.description>
+
+  <MealPrinter_DeepResequencing.label>심층 단백질 재배열</MealPrinter_DeepResequencing.label>
+  <MealPrinter_DeepResequencing.description>내부의 단백질 재배열기의 침투 능력을 큰 폭으로 상승시키는 음식 프린터의 업그레이드로, 고도로 가공된 음식을 인쇄할 수 있습니다(영양 바 인쇄 가능).</MealPrinter_DeepResequencing.description>
+
+  <MealPrinter_Recombinators.label>원자 재조합기</MealPrinter_Recombinators.label>
+  <MealPrinter_Recombinators.description>원래라면 사용할 수 없었던 식재료의 부분을 먹을 수 있도록 합성하는 음식 프린터의 업그레이드로, 맛, 질감, 전반적 인상을 희생하고 인쇄 효율을 상승시킵니다(고효율 영양죽 인쇄 가능).</MealPrinter_Recombinators.description>
+
+</LanguageData>

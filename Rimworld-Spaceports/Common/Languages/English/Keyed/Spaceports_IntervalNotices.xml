@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!--Visitor Notifications-->
+  	<Spaceports_SingleVisitorLanding>A shuttle from {1} is landing to visit. {PAWN_titleIndef} named {PAWN_nameFull} is onboard.</Spaceports_SingleVisitorLanding>
+  	<Spaceports_SingleVisitorLeader>{PAWN_pronoun} is the leader of the faction.</Spaceports_SingleVisitorLeader>
+
+  	<Spaceports_GroupVisitorsLanding>A shuttle from {0} is landing to visit.</Spaceports_GroupVisitorsLanding>
+  	<Spaceports_GroupVisitorsLeader>One of the visitors - {1_labelShort}, is the leader of the faction.</Spaceports_GroupVisitorsLeader>
+
+  	<Spaceports_VisitorsLeaving>Visitors from {0} are departing.</Spaceports_VisitorsLeaving>    
+
+  	<!--Trader Notifications-->
+	<LetterTraderShuttleArrival>A trade shuttle from {0} is landing. They are a {1}.</LetterTraderShuttleArrival>
+</LanguageData>

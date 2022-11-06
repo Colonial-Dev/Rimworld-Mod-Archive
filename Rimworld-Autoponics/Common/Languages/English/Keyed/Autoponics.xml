@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Meal Descriptions-->
+	<AutoponicsSuspendGrowing>Suspend sowing</AutoponicsSuspendGrowing>
+	<AutoponicsSuspendGrowingDesc>Suspend the sowing of new plants indefinitely.</AutoponicsSuspendGrowingDesc>
+	<AutoponicsCutNow>Cut now</AutoponicsCutNow>
+	<AutoponicsCutNowDesc>Immediately auto-cut/harvest all plants in the basin, regardless of growth stage.</AutoponicsCutNowDesc>
+	<AutoponicsCannotCutNoPower>Cannot auto-cut/harvest - no power!</AutoponicsCannotCutNoPower>
+	
+</LanguageData>

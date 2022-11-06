@@ -1,0 +1,48 @@
+<LanguageData>
+	<Spaceports_ImmediateDeparture>Force depart</Spaceports_ImmediateDeparture>
+	<Spaceports_ImmediateDepartureTooltip>Force this shuttle to take off and depart immediately, regardless of whether or not all required items are loaded.</Spaceports_ImmediateDepartureTooltip>
+	<Spaceports_RecallParty>Force recall</Spaceports_RecallParty>
+	<Spaceports_RecallPartyTooltip>Force this shuttle's owning party to immediately board and depart.</Spaceports_RecallPartyTooltip>
+	<Spaceports_GizmoDisabled>you do not have control over this shuttle, or this shuttle is incapable of taking off.</Spaceports_GizmoDisabled>
+
+	<AccessControlButton>Access control</AccessControlButton>
+	<AccessControlDesc>Specify what type of shuttles are allowed to use this pad.</AccessControlDesc>
+	<Spaceports_None>No shuttles</Spaceports_None>
+	<Spaceports_AllTypes>All shuttles</Spaceports_AllTypes>
+	<Spaceports_JustVisitors>Visitors only</Spaceports_JustVisitors>
+	<Spaceports_JustTraders>Traders only</Spaceports_JustTraders>
+	<Spaceports_JustGuests>Guests only</Spaceports_JustGuests>
+
+	<Spaceports_AirspaceLockdown>Airspace lockdown</Spaceports_AirspaceLockdown>
+	<Spaceports_AirspaceLockdownDesc>Due to the presence of hostiles, or because it was manually activated, one or more of your colonies has automatically entered airspace lockdown. No new shuttles of any type will arrive, but any landed shuttles can still depart. \n\nColonies currently under airspace lockdown:\n</Spaceports_AirspaceLockdownDesc>
+	<Spaceports_AutoEvac>Auto-evacuation in progress</Spaceports_AutoEvac>
+	<Spaceports_AutoEvacDesc>Due to the presence of hostiles, one or more of your colonies has initiated automatic evacuation of shuttle visitors. \n\nColonies currently performing auto-evacuation:\n</Spaceports_AutoEvacDesc>
+	
+	<Spaceports_NextPageA>Next page (animations, events)</Spaceports_NextPageA>
+	<Spaceports_NextPageB>Next page (Integrations, reset)</Spaceports_NextPageB>
+	<Spaceports_PrevPage>Next page (traffic control, visitors, traders)</Spaceports_PrevPage>
+
+	<Spaceports_BeaconUnpowered>\nBeacon unpowered - spaceport offline.</Spaceports_BeaconUnpowered>
+	<Spaceports_BeaconNoPads>\nNo active landing pads detected - spaceport offline.</Spaceports_BeaconNoPads>
+	<Spaceports_BeaconAtCap>\nSpaceport at user-defined limit - landings suspended.</Spaceports_BeaconAtCap>
+	<Spaceports_BeaconPadsFull>\nAll landing pads are full - landings suspended.</Spaceports_BeaconPadsFull>
+	<Spaceports_BeaconKessler>\nDebris cascade in progress - landings impossible.</Spaceports_BeaconKessler>
+	<Spaceports_BeaconOK>\nSpaceport online.</Spaceports_BeaconOK>
+	<Spaceports_BeaconDisabledGeneral>beacon is unpowered.</Spaceports_BeaconDisabledGeneral>
+	<Spaceports_CallTaxi>Call taxi shuttle</Spaceports_CallTaxi> <!--Royalty locked-->
+	<Spaceports_CallTaxiTooltip>Call a single-use automated taxi shuttle for 500 silver.</Spaceports_CallTaxiTooltip>
+	<Spaceports_CallTaxiDisabled>beacon is unpowered - cannot establish uplink to taxi service.</Spaceports_CallTaxiDisabled>
+	<Spaceports_CallTaxiDisabledDLC>this feature requires the Royalty DLC.</Spaceports_CallTaxiDisabledDLC>
+	<Spaceports_Uplink>Uplink established...</Spaceports_Uplink>
+	<Spaceports_CallTaxiInfo>Service: One-way automated taxi shuttle\nFare: 500 silver\nBoarding: first open pad</Spaceports_CallTaxiInfo>
+	<Spaceports_CannotProceedSilver>\nCannot proceed: insufficent silver. (Is it not within a trade beacon zone?)</Spaceports_CannotProceedSilver>
+	<Spaceports_CannotProceedNoPads>\nCannot proceed: no open pads.</Spaceports_CannotProceedNoPads>
+	<Spaceports_CallTaxiCancel>Cancel</Spaceports_CallTaxiCancel>
+	<Spaceports_CallTaxiConfirm>Call!</Spaceports_CallTaxiConfirm>
+	<Spaceports_ManualAirspaceLockdown>Airspace lockdown</Spaceports_ManualAirspaceLockdown>
+	<Spaceports_ManualAirspaceLockdownTooltip>Manually toggle airspace lockdown.</Spaceports_ManualAirspaceLockdownTooltip>
+	<Spaceports_DismissAll>Force depart all</Spaceports_DismissAll>
+	<Spaceports_DismissAllTooltip>Force all shuttles on the map to depart immediately, regardless of whether or not all required items are loaded.</Spaceports_DismissAllTooltip>
+	<Spaceports_RecallAll>Force recall all</Spaceports_RecallAll>
+	<Spaceports_RecallAllTooltip>Force the owning parties of all shuttles on the map to immediately board and depart.</Spaceports_RecallAllTooltip>
+</LanguageData>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>PodFunnel</defName>
+    <label>pod funnel</label>
+    <description>A spacer-tech device that uses projected sheets of momentum-repulsion fielding to invisibly soft-land inbound transport pods on nearby launchers, thus enabling their reuse.\n\nIf there are more incoming pods than available launchers, then the excess pods will hard land and be destroyed.\n\nPod funnels are internally powered by a shielded uranium energy cell, allowing them to operate even during solar flares.\n\nSince telemetry must be exchanged between the funnel and pod for soft landing to occur, the funnel will only affect your pods.</description>
+    <thingClass>ReusePods.Building_PodFunnel</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/PodFunnel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <altitudeLayer>Building</altitudeLayer>
+	 <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <constructEffect>ConstructMetal</constructEffect>
+    <fillPercent>0.30</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+      <Plasteel>50</Plasteel>
+	  <Uranium>10</Uranium>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+	<specialDisplayRadius>20</specialDisplayRadius>
+    <researchPrerequisites>
+      <li>TransportPod</li>
+      <li>Fabrication</li>
+	  <li>ShieldBelt</li>
+    </researchPrerequisites>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+	<comps>
+	    <li Class="CompProperties_Glower">
+        <glowRadius>6</glowRadius>
+        <glowColor>(58,148,183,0)</glowColor>
+		</li>
+	</comps>
+  </ThingDef>
+</Defs>

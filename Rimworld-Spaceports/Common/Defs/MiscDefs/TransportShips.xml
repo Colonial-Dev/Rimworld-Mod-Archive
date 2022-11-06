@@ -1,0 +1,53 @@
+<Defs>
+
+      <TransportShipDef>
+        <defName>Spaceports_RoyaltyShuttleTS</defName>
+        <label>shuttle</label>
+        <shipThing>Spaceports_RoyaltyShuttle</shipThing>
+        <arrivingSkyfaller>RoyaltyShuttle_Incoming</arrivingSkyfaller>
+        <leavingSkyfaller>RoyaltyShuttle_Leaving</leavingSkyfaller>
+        <worldObject>Spaceports_ShuttleWO</worldObject> 
+        <maxLaunchDistance>70</maxLaunchDistance>
+      </TransportShipDef>
+
+      <TransportShipDef>
+        <defName>Spaceports_ShuttleA</defName>
+        <label>shuttle</label>
+        <shipThing>Spaceports_ShuttleA</shipThing>
+        <arrivingSkyfaller>ShuttleA_Incoming</arrivingSkyfaller>
+        <leavingSkyfaller>ShuttleA_Leaving</leavingSkyfaller>
+        <worldObject>Spaceports_ShuttleWO</worldObject> 
+        <maxLaunchDistance>70</maxLaunchDistance>
+      </TransportShipDef>
+
+      <TransportShipDef>
+        <defName>Spaceports_ShuttleSkip</defName>
+        <label>shuttle</label>
+        <shipThing>Spaceports_ShuttleSkip</shipThing>
+        <arrivingSkyfaller>ShuttleSkip_Incoming</arrivingSkyfaller>
+        <leavingSkyfaller>ShuttleSkip_Leaving</leavingSkyfaller>
+        <worldObject>Spaceports_ShuttleWO</worldObject> 
+        <maxLaunchDistance>70</maxLaunchDistance>
+      </TransportShipDef>
+
+      <TransportShipDef>
+        <defName>Spaceports_ShuttleInert</defName>
+        <label>shuttle</label>
+        <shipThing>Spaceports_ShuttleInert</shipThing>
+        <arrivingSkyfaller>ShuttleA_Incoming</arrivingSkyfaller>
+        <leavingSkyfaller>ShuttleA_Leaving</leavingSkyfaller>
+        <worldObject>Spaceports_ShuttleWO</worldObject> 
+        <maxLaunchDistance>70</maxLaunchDistance>
+      </TransportShipDef>
+
+      <TransportShipDef>
+        <defName>Spaceports_SurpriseShuttle</defName>
+        <label>mysterious shuttle</label>
+        <shipThing>Spaceports_SurpriseShuttle</shipThing>
+        <arrivingSkyfaller>ShuttleA_Incoming</arrivingSkyfaller>
+        <leavingSkyfaller>ShuttleA_Leaving</leavingSkyfaller>
+        <worldObject>Spaceports_ShuttleWO</worldObject>
+        <maxLaunchDistance>70</maxLaunchDistance>
+      </TransportShipDef>
+
+</Defs>

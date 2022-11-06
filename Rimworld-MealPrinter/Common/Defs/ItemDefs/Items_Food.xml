@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="MealBase">
+    <defName>MealPrinter_NutriBar</defName>
+    <label>NutriBar</label>
+    <description>A spacer-tech compromise between neolithic pemmican and industrial packaged survival meals, designed specifically to be mass-produced by meal printers.\n\nNutriBars consist of extensively-resequenced foodstuffs, compacted into a handheld form factor. Lightweight, energy dense and inoffensively flavored, one NutriBar is just as filling as a traditional meal and lasts several seasons without refrigeration. Perfect for emergency stockpiles or caravan trips.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <thingCategories>
+      <li>Foods</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Resource/NutriBar</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <MarketValue>5</MarketValue>
+      <Mass>0.3</Mass>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <optimalityOffsetHumanlikes>-5</optimalityOffsetHumanlikes>
+      <optimalityOffsetFeedingAnimals>-10</optimalityOffsetFeedingAnimals>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>75</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

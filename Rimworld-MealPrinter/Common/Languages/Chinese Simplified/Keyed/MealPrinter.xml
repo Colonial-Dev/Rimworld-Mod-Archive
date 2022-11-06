@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!--Meal Descriptions-->
+	<SimpleMealDesc>使用单一食材的简单食物。\n\n原材料利用率和手动制作简单食物相同。</SimpleMealDesc>
+	<FineMealDesc>使用单一食材的复杂食物。\n\n尽管只能使用同一种食材、并且制作过程相当浪费，但口感很好。</FineMealDesc>
+	<PasteMealDesc>混合了蛋白质、碳水化合物、维他命、氨基酸和矿物质的代餐条。\n\n非常难吃、但很容易吃饱，制作过程几乎不会浪费食材。</PasteMealDesc>
+	
+	<!--Meal print eff.-->
+	<SimpleMealEff>50</SimpleMealEff>
+	<FineMealEff>25</FineMealEff>
+	<PasteMealEff>85</PasteMealEff>
+
+	<!--Button text and descriptions-->
+	<ButtonBulkPrintBars>批量生产代餐条</ButtonBulkPrintBars>
+	<ButtonBulkPrintBarsDesc>大批次的生产代餐条，可以用作应急储备、商队补给，或其他用途。</ButtonBulkPrintBarsDesc>
+	<ButtonBulkPrintBarsDescNoResearch>大批次的生产代餐条，可以用作应急储备、商队补给，或其他用途。\n\n已禁用：需要研究 深度蛋白质再测序 </ButtonBulkPrintBarsDescNoResearch>
+	<ButtonBulkPrintBarsDescNoPower>大批次的生产代餐条，可以用作应急储备、商队补给，或其他用途。\n\n已禁用：打印机没有能源！</ButtonBulkPrintBarsDescNoPower>
+	<PrintSettingButton>{0} 인쇄 중</PrintSettingButton>
+	
+	<!--Inspect Pane Text-->
+	<CurrentPrintSetting>\n目前打印序列： {0}.</CurrentPrintSetting>
+	<CurrentEfficiency>\n食材使用效率： {0}%</CurrentEfficiency>
+	
+	<!--Bulk print bars text-->
+	<SetBarBatchSize>{0} 代餐条（最大数量： {1}）</SetBarBatchSize>
+	<CannotBulkPrintBars>无法批量生产代餐条：打印机舱内原料不足。</CannotBulkPrintBars>
+	<BarQuantity>数量</BarQuantity>
+	<PrintSettings>设置</PrintSettings>
+	<PrintForbidden>自动将打印出的代餐条标记为不可用？</PrintForbidden>
+	<PrintRear>将打印出的代餐条置于及其后方？</PrintRear>
+	<ConfirmPrint>生产</ConfirmPrint>
+
+	<!--Settings-->
+	<MealPrinterModName>膳食打印机</MealPrinterModName>
+	<PrintSFXLabel>打开打印机生产音效？</PrintSFXLabel>
+
+</LanguageData>

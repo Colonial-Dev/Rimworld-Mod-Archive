@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Clonebay_Done>Se ha clonado y reintegrado a {0} con éxito.</Clonebay_Done>
+    <Clonebay_CannotClone>No se ha podido clonar y reintegrar a {0} - ¡Sin energía, la bahía está apagada!</Clonebay_CannotClone>
+
+</LanguageData>

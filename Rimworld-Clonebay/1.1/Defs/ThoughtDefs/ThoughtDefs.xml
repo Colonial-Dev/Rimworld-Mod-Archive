@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>Clonebay_ReintegrationCrisis</defName>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <nullifyingTraits>
+      <li>BodyPurist</li>
+      <li>Transhumanist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>reintegration confusion</label>
+        <description>I died... then woke up like nothing happened. Am I really still me, or do I just think I'm me?</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Clonebay_ReintegrationCrisisPhobe</defName>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <requiredTraits>
+      <li>BodyPurist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>reintegration hate</label>
+        <description>I died... then woke up like nothing happened. THIS ISN'T NATURAL! KILL ME!</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>Clonebay_ReintegrationCrisisPhile</defName>
+    <durationDays>3</durationDays>
+    <stackLimit>1</stackLimit>
+    <requiredTraits>
+      <li>Transhumanist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>reintegration love</label>
+        <description>I died... then woke up like nothing happened. I'm back and better than ever!</description>
+        <baseMoodEffect>+5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

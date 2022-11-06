@@ -1,0 +1,8 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Human"]/recipes</xpath>
+    <value>
+      <li>ClonebayInstallScanner</li>
+    </value>
+  </Operation>
+</Patch>

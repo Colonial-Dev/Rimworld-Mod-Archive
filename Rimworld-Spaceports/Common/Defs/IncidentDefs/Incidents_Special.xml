@@ -1,0 +1,82 @@
+<Defs>
+    <IncidentDef>
+        <defName>Spaceports_ShuttleMedevac</defName>
+        <label>shuttle medevac</label>
+        <category>Misc</category>
+        <targetTags>
+          <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>Spaceports.Incidents.IncidentWorker_ShuttleMedevac</workerClass>
+        <letterDef>Spaceports_ShuttleMedevac</letterDef>
+        <letterLabel>Shuttle medevac</letterLabel>
+        <baseChance>1.0</baseChance>
+        <minRefireDays>60</minRefireDays>
+    </IncidentDef>
+
+    <IncidentDef>
+        <defName>Spaceports_MedevacReward</defName>
+        <label>medevac reward</label>
+        <category>Misc</category>
+        <targetTags>
+          <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>Spaceports.Incidents.IncidentWorker_ShuttleMedevacReward</workerClass>
+        <baseChance>0</baseChance>
+      </IncidentDef>
+      
+      <IncidentDef>
+        <defName>Spaceports_InterstellarDerelict</defName>
+        <label>interstellar derelict</label>
+        <category>Misc</category>
+        <targetTags>
+          <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>Spaceports.Incidents.IncidentWorker_InterstellarDerelict</workerClass>
+        <letterDef>Spaceports_InterstellarDerelict</letterDef>
+        <letterLabel>Interstellar derelict</letterLabel>
+        <baseChance>1.0</baseChance>
+        <minRefireDays>60</minRefireDays>
+    </IncidentDef>
+
+    <IncidentDef>
+      <defName>Spaceports_MysteryCargo</defName>
+      <label>mysterious cargo</label>
+      <category>Misc</category>
+      <targetTags>
+        <li>Map_PlayerHome</li>
+      </targetTags>
+      <workerClass>Spaceports.Incidents.IncidentWorker_MysteryCargo</workerClass>
+      <letterDef>Spaceports_MysteryCargo</letterDef>
+      <letterLabel>Mysterious cargo</letterLabel>
+      <baseChance>1.0</baseChance>
+      <minRefireDays>60</minRefireDays>
+  </IncidentDef>
+
+  <IncidentDef>
+    <defName>Spaceports_PrisonerTransfer</defName>
+    <label>prisoner transfer</label>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>Spaceports.Incidents.IncidentWorker_PrisonerTransfer</workerClass>
+    <letterDef>Spaceports_PrisonerTransfer</letterDef>
+    <letterLabel>Prisoner transfer</letterLabel>
+    <baseChance>1.0</baseChance>
+    <minRefireDays>60</minRefireDays>
+</IncidentDef>
+
+<IncidentDef>
+  <defName>Spaceports_SpicyPawnLending</defName>
+  <label>Professional help needed</label>
+  <category>Misc</category>
+  <targetTags>
+    <li>Map_PlayerHome</li>
+  </targetTags>
+  <workerClass>Spaceports.Incidents.IncidentWorker_SpicyPawnLending</workerClass>
+  <letterDef>Spaceports_SpicyPawnLending</letterDef>
+  <letterLabel>Professional help needed</letterLabel>
+  <baseChance>0</baseChance>
+  <minRefireDays>60</minRefireDays>
+</IncidentDef>
+</Defs>

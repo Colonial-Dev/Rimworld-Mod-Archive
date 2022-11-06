@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef Name="MealPrinterResearch" Abstract="True">
+	<tab>MealPrinter_ResearchTab</tab>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MealPrinterResearch">
+    <defName>MealPrinter_MealPrinting</defName>
+    <label>Meal Printing</label>
+    <description>Build meal printers, spacer-tech devices that use protein resequencing and primitive molecular printing to synthesize wholesome, filling meals.</description>
+    <baseCost>5000</baseCost>
+	<techLevel>Spacer</techLevel>
+	<prerequisites>
+      		<li>Fabrication</li>
+			<li>NutrientPaste</li>
+    	</prerequisites>
+	<researchViewX>0</researchViewX>
+	<researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MealPrinterResearch">
+    <defName>MealPrinter_HighRes</defName>
+    <label>High-res Molecular Printing</label>
+    <description>An upgrade for meal printers that vastly boosts the placement resolution of the molecular printing heads, enabling the printing of more complex meals. (Unlocks fine meal printing.)</description>
+    <baseCost>3000</baseCost>
+	<techLevel>Spacer</techLevel>
+	<prerequisites>
+      		<li>MealPrinter_MealPrinting</li>
+    	</prerequisites>
+	<researchViewX>1</researchViewX>
+	<researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MealPrinterResearch">
+    <defName>MealPrinter_DeepResequencing</defName>
+    <label>Deep Protein Resequencing</label>
+    <description>An upgrade for meal printers that vastly increases the penetration capabilites of the internal protein resequencers, enabling the printing of highly processed foodstuffs. (Unlocks bulk NutriBar printing.)</description>
+    <baseCost>3000</baseCost>
+	<techLevel>Spacer</techLevel>
+	<prerequisites>
+      		<li>MealPrinter_MealPrinting</li>
+    	</prerequisites>
+	<researchViewX>1</researchViewX>
+	<researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+
+  <ResearchProjectDef ParentName="MealPrinterResearch">
+    <defName>MealPrinter_Recombinators</defName>
+    <label>Atomic Recombinators</label>
+    <description>An upgrade for meal printers that synthesizes the normally unusable portions of raw foodstuffs into edible material, boosting print efficiency at the cost of taste, texture and general appeal. (Unlocks high efficiency nutrient paste printing.)</description>
+    <baseCost>3000</baseCost>
+	<techLevel>Spacer</techLevel>
+	<prerequisites>
+      		<li>MealPrinter_MealPrinting</li>
+    	</prerequisites>
+	<researchViewX>1</researchViewX>
+	<researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+</Defs>

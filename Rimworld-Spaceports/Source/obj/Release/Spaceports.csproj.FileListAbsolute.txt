@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimworld-Spaceports-master\Source\obj\Release\Spaceports.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimworld-Spaceports-master\Source\obj\Release\Spaceports.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimworld-Spaceports-master\Assemblies\Spaceports.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimworld-Spaceports-master\Source\obj\Release\Spaceports.csproj.CopyComplete
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimworld-Spaceports-master\Source\obj\Release\Spaceports.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Rimworld-Spaceports-master\1.4\Assemblies\Spaceports.dll

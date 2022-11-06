@@ -1,0 +1,79 @@
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Spaceports_VisitorSpot</defName>
+    <label>spaceport visitor spot</label>
+    <description>Designates a configurable spot for spaceport visitors to linger at.\n\nArriving spaceport visitors will pick the closest valid spot to their shuttle pad or landing position; if no valid spot is found, they will instead linger around their shuttle. Multiple parties can linger at the same spot simultaneously.</description>
+    <thingClass>Spaceports.Buildings.Building_ShuttleSpot</thingClass>
+    <graphicData>
+      <texPath>Buildings/SpaceportChillSpot/ChillSpot_base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+    </statBases>
+    <rotatable>false</rotatable>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>False</useHitPoints>
+    <designationCategory>Misc</designationCategory>
+    <passability>Standable</passability>
+    <building>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+    </building>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Spaceports_Beacon</defName>
+    <label>spaceport beacon</label>
+    <description>A combination deep-field transmitter and over-the-horizon radar station used throughout the Rim to broadcast the presence and availability of a spaceport.</description>
+    <thingClass>Spaceports.Buildings.Building_Beacon</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/SpaceportBeacon/SpaceportBeacon_base</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <uiIconPath>Buildings/SpaceportBeacon/SpaceportBeacon</uiIconPath>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <pathCost>50</pathCost>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+    </statBases>
+    <rotatable>false</rotatable>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <size>(3,3)</size>
+    <designationCategory>Misc</designationCategory>
+    <passability>Standable</passability>
+    <clearBuildingArea>true</clearBuildingArea>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+        <soundAmbientPowered>Spaceports_BeaconAmbience</soundAmbientPowered>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,78 @@
+<Defs>
+    <ThingDef Name="Spaceports_SkyfallerCrashingBase" ParentName="SkyfallerBase" Abstract="True">
+        <label>shuttle (crashing)</label>
+        <thingClass>ShuttleIncoming</thingClass>
+        <size>(5,3)</size>
+        <skyfaller>
+          <shadow>Things/Skyfaller/SkyfallerShadowRectangle</shadow>
+          <shadowSize>(5.5,3.5)</shadowSize>
+          <motesPerCell>1</motesPerCell>
+          <anticipationSound>Shuttle_CrashLanding</anticipationSound>
+          <anticipationSoundTicks>180</anticipationSoundTicks>
+          <impactSound>Shuttle_Impact</impactSound>
+          <ticksToImpactRange>150~200</ticksToImpactRange>
+          <movementType>ConstantSpeed</movementType>
+          <angleCurve>
+            <points>
+              <li>(0,-60)</li>
+              <li>(1,-90)</li>
+            </points>
+          </angleCurve>
+          <rotationCurve>
+            <points>
+              <li>(0,20)</li>
+              <li>(0.49,5)</li>
+              <li>(0.6,5)</li>
+              <li>(0.7,3)</li>
+              <li>(0.8,3)</li>
+              <li>(0.83,-4)</li>
+              <li>(0.9,3)</li>
+              <li>(0.95,-2)</li>
+              <li>(0.98,1)</li>
+              <li>(0.99,0)</li>
+            </points>
+          </rotationCurve>
+          <speed>0.8</speed>
+          <explosionRadius>10</explosionRadius>
+          <explosionDamage>BombSuper</explosionDamage>
+          <cameraShake>1</cameraShake>
+          <metalShrapnelCountRange>
+            <min>6</min>
+            <max>10</max>
+          </metalShrapnelCountRange>
+          <rubbleShrapnelCountRange>
+            <min>300</min>
+            <max>400</max>
+          </rubbleShrapnelCountRange>
+          <shrapnelDistanceFactor>0.2</shrapnelDistanceFactor>
+        </skyfaller>
+      </ThingDef>
+
+      <ThingDef ParentName="Spaceports_SkyfallerCrashingBase">
+          <defName>ShuttleA_Crashing</defName>
+          <graphicData>
+            <texPath>Buildings/Shuttles/ShuttleA</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutFlying</shaderType>
+            <drawSize>(6,3)</drawSize>
+            <color>(162,164,149)</color>
+          </graphicData>
+      </ThingDef>
+
+      <ThingDef ParentName="SkyfallerBase">
+        <defName>Spaceports_Shrapnel</defName>
+        <label>shrapnel (incoming)</label>
+        <size>(1, 1)</size>
+        <graphicData>
+          <texPath>Things/Item/Chunk/ChunkSlag</texPath>
+          <graphicClass>Graphic_Random</graphicClass>
+          <drawSize>(1, 1)</drawSize>
+        </graphicData>
+        <skyfaller>
+          <shadowSize>(1.5, 1.5)</shadowSize>
+          <explosionRadius>1</explosionRadius>
+          <explosionDamage>Bomb</explosionDamage>
+          <explosionDamageFactor>0.5</explosionDamageFactor>
+        </skyfaller>
+      </ThingDef>
+</Defs>

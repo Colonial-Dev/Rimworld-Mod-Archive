@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<Clonebay_ReintegrationCrisis.stages.0.label>confusión por reintegración</Clonebay_ReintegrationCrisis.stages.0.label>
+    <Clonebay_ReintegrationCrisis.stages.0.description>Morí... y luego me desperté como si nada hubiera pasado. ¿Sigo siendo yo, o sólo creo que soy yo?</Clonebay_ReintegrationCrisis.stages.0.description>
+
+	<Clonebay_ReintegrationCrisisPhobe.stages.0.label>odio la reintegración</Clonebay_ReintegrationCrisisPhobe.stages.0.label>
+    <Clonebay_ReintegrationCrisisPhobe.stages.0.description>Morí... y luego me desperté como si nada hubiera pasado. ¡ESTO NO ES NATURAL! ¡MÁTAME!</Clonebay_ReintegrationCrisisPhobe.stages.0.description>
+
+	<Clonebay_ReintegrationCrisisPhile.stages.0.label>amo la reintegración</Clonebay_ReintegrationCrisisPhile.stages.0.label>
+    <Clonebay_ReintegrationCrisisPhile.stages.0.description>Morí... y luego me desperté como si nada hubiera pasado. ¡He vuelto y estoy mejor que nunca!</Clonebay_ReintegrationCrisisPhile.stages.0.description>
+
+</LanguageData>

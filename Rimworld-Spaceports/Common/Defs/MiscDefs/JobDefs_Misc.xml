@@ -1,0 +1,9 @@
+<Defs>
+  <JobDef>
+    <defName>Spaceports_Kidnap</defName>
+    <driverClass>Spaceports.JobDrivers.JobDriver_SpaceportsKidnap</driverClass>
+    <reportString>kidnapping TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <checkOverrideOnDamage>Never</checkOverrideOnDamage>
+  </JobDef>
+</Defs>

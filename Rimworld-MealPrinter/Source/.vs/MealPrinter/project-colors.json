@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b0b0bf3b-d078-43e4-bad0-909953fc6a37": {
+      "ProjectGuid": "b0b0bf3b-d078-43e4-bad0-909953fc6a37",
+      "DisplayName": "MealPrinter",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

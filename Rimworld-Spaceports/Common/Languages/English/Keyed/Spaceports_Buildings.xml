@@ -1,0 +1,15 @@
+<LanguageData>
+
+    <Spaceports_RoofBlocking>Pad blocked by roofing.</Spaceports_RoofBlocking>
+    <Spaceports_TotalFuelProduced>Lifetime fusion fuel production: {0}</Spaceports_TotalFuelProduced>
+    <Spaceports_ProductionCache>Cached output: {0}</Spaceports_ProductionCache>
+    <Spaceports_FuelLevel>Fusion fuel level: {0}</Spaceports_FuelLevel>
+    <Spaceports_TotalSales>Lifetime fuel sales silver total: {0}</Spaceports_TotalSales>
+    <Spaceports_NetworkInfo>There are {0} tanks on the network holding a total of {1} fusion fuel.</Spaceports_NetworkInfo>
+    <Spaceports_DryModeWarning>Warning: without being placed on water, fuel processor will run at 33% efficiency.</Spaceports_DryModeWarning>
+    <Spaceports_DryModeWarningDBH>Warning: fuel processor requires water piping to operate at full efficiency.</Spaceports_DryModeWarningDBH>
+    <Spaceports_FFTerrain>Fusion fuel processor must be placed in shallow water, a river, or on terrain that supports Heavy.</Spaceports_FFTerrain>
+    <Spaceports_ModeWet>Operating mode: wet (100% of max efficiency)</Spaceports_ModeWet>
+    <Spaceports_ModeDry>Operating mode: dry (33% of max efficiency)</Spaceports_ModeDry>
+
+</LanguageData>

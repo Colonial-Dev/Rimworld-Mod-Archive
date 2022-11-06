@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase" Name="QEGenomeSequencerBase" Abstract="True">
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>100</MarketValue>
+      <Mass>0.25</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <resourceReadoutPriority>Uncounted</resourceReadoutPriority>
+  </ThingDef>
+  <ThingDef ParentName="QEGenomeSequencerBase">
+    <defName>Clonebay_GenomeSequencerFilled</defName>
+    <label>clonebay_genomeholder</label>
+    <description>A slab of data filled with the full genome of a living being.</description>
+    <graphicData>
+      <texPath>Things/Item/Manufactured/DataSlab</texPath>
+    </graphicData>
+    <comps>
+      <li Class="Clonebay.CompProperties_CustomName" />
+    </comps>
+    <thingCategories Inherit="False">
+      <li>Items</li>
+    </thingCategories>
+    <thingClass>Clonebay.GenomeSequence</thingClass>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+</Defs>
